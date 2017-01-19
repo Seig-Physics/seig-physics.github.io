@@ -1,4 +1,4 @@
-/* DefaultCSS */
+/* === DefaultCSS === */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -102,7 +102,7 @@ input, select {
   vertical-align: middle;
 }
 
-/* CustomCSS */
+/* === CustomCSS === */
 main {
   display: table;
   margin: 0 auto;
@@ -148,7 +148,7 @@ nav li {
     padding: 10px 20px;
 }
 
-/* ProcessLine */
+/* === ProcessLine === */
 .process {
   border-left: 2px solid #3d80e4;
   margin-left: 10px;
@@ -192,7 +192,7 @@ nav li {
 }
 
 
-/* === PlanContents === */
+/* === lightGallery === */
 @font-face {
   font-family: 'lg';
   src: url("fonts/lg.eot");
@@ -586,13 +586,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   cursor: pointer;
 }
 .lg-outer .lg-has-vimeo .lg-video-play {
-  background: url("../img/vimeo-play.png") no-repeat scroll 0 0 transparent;
+  background: url("img/lightgallery/vimeo-play.png") no-repeat scroll 0 0 transparent;
 }
 .lg-outer .lg-has-vimeo:hover .lg-video-play {
-  background: url("../img/vimeo-play.png") no-repeat scroll 0 -58px transparent;
+  background: url("img/lightgallery/vimeo-play.png") no-repeat scroll 0 -58px transparent;
 }
 .lg-outer .lg-has-html5 .lg-video-play {
-  background: transparent url("../img/video-play.png") no-repeat scroll 0 0;
+  background: transparent url("img/lightgallery/video-play.png") no-repeat scroll 0 0;
   height: 64px;
   margin-left: -32px;
   margin-top: -32px;
@@ -603,10 +603,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   opacity: 1;
 }
 .lg-outer .lg-has-youtube .lg-video-play {
-  background: url("../img/youtube-play.png") no-repeat scroll 0 0 transparent;
+  background: url("img/lightgallery/youtube-play.png") no-repeat scroll 0 0 transparent;
 }
 .lg-outer .lg-has-youtube:hover .lg-video-play {
-  background: url("../img/youtube-play.png") no-repeat scroll 0 -60px transparent;
+  background: url("img/lightgallery/youtube-play.png") no-repeat scroll 0 -60px transparent;
 }
 .lg-outer .lg-video-object {
   width: 100% !important;
@@ -996,7 +996,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   white-space: nowrap;
 }
 .lg-outer .lg-item {
-  background: url("../img/loading.gif") no-repeat scroll center center transparent;
+  background: url("img/lightgallery/loading.gif") no-repeat scroll center center transparent;
   display: none !important;
 }
 .lg-outer.lg-css3 .lg-prev-slide, .lg-outer.lg-css3 .lg-current, .lg-outer.lg-css3 .lg-next-slide {
