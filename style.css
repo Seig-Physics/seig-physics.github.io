@@ -195,8 +195,8 @@ nav li {
 /* === lightGallery === */
 @font-face {
   font-family: 'lg';
-  src: url("fonts/lg.eot");
-  src: url("fonts/lg.eot") format("embedded-opentype"), url("fonts/lg.woff") format("woff"), url("fonts/lg.ttf") format("truetype"), url("fonts/lg.svg") format("svg");
+  src: url("fonts/lightgallery/lg.eot");
+  src: url("fonts/lightgallery/lg.eot") format("embedded-opentype"), url("fonts/lightgallery/lg.woff") format("woff"), url("fonts/lightgallery/lg.ttf") format("truetype"), url("fonts/lightgallery/lg.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
