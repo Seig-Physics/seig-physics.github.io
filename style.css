@@ -369,6 +369,7 @@ nav li {
 }
 .lg-toolbar .lg-icon:hover {
   color: #FFF;
+  animation-play-state: paused;
 }
 .lg-toolbar .lg-close:after {
   content: "\e070";
