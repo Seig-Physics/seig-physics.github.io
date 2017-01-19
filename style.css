@@ -41,7 +41,7 @@ a:hover {
 	-webkit-animation: zoom .3s;
 	animation: zoom .3s;
 }
-a:hover:after {
+a:hover:after:not([id^="lg"]) {
   position: absolute;
   bottom: 0;
   left: 50%;
