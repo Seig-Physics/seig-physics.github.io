@@ -1,17 +1,17 @@
 <style>
-div{
+.gallery {
   height: 500px;
   display: block;
   writing-mode: tb-rl;
 }
-.gallery {
+.gallery-img {
   overflow: hidden;
   width: 200px;/* トリミングしたい枠の幅 */
   height: 200px;/* トリミングしたい枠の高さ */
   position: relative;
   display: inline;
 }
-.gallery img {
+.gallery-img img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -24,10 +24,11 @@ div{
   height: auto;
 }
 </style>
-<div>
+
+<div class="gallery">
 <script>
 for (i=1; i<=13; i++) {
-	document.write('<div class="gallery"><a href="https://seig-physics.github.io/site/test/' + i + '.jpg"><img src="https://seig-physics.github.io/site/test/' + i + '.jpg"></a></div>');
+	document.write('<div class="gallery-img"><a href="https://seig-physics.github.io/site/test/' + i + '.jpg"><img src="https://seig-physics.github.io/site/test/' + i + '.jpg"></a></div>');
 }
 </script>
 </div>
