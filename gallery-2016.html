@@ -10,6 +10,15 @@
   <script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"/>
   <![endif]-->
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+<script type="text/javascript">
+$(function(){
+    $('ul li').each(function(i){
+        $(this).attr('class','number' + (i+1));
+        $(this).attr('id','element' + (i+1));
+        $(this).text('https://github.com/SeigPhysics/img/' + (i+1));
+    });
+});
+</script>
   <link rel="stylesheet" href="style.css">
   <script src="js/lightgallery.js"></script>
   <title>ギャラリー2016｜聖学院物理部</title>
