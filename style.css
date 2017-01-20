@@ -199,8 +199,8 @@ overflow-x: scroll;;
 }
 .gallery-img {
   overflow: hidden;
-  width: 200px;/* トリミングしたい枠の幅 */
-  height: 200px;/* トリミングしたい枠の高さ */
+  width: 100px;/* トリミングしたい枠の幅 */
+  height: 100px;/* トリミングしたい枠の高さ */
   position: relative;
   display: inline-block;
 }
@@ -211,8 +211,6 @@ overflow-x: scroll;;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: auto;
-  height: 100%;
 }
 
 /* === lightGallery === */
