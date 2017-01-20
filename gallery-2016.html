@@ -10,15 +10,6 @@
   <script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"/>
   <![endif]-->
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
-<script type="text/javascript">
-$(function(){
-    $('ul li').each(function(i){
-        $(this).attr('class','number' + (i+1));
-        $(this).attr('id','element' + (i+1));
-        $(this).text('https://github.com/SeigPhysics/img/' + (i+1));
-    });
-});
-</script>
   <link rel="stylesheet" href="style.css">
   <script src="js/lightgallery.js"></script>
   <title>ギャラリー2016｜聖学院物理部</title>
@@ -43,13 +34,14 @@ $(function(){
   <main>
     <div id="contents-main">
       <h1>2016年度　ギャラリー</h1>
+      <div class="gallery">
       <div id="lightgallery">
-        <a href="img/gallery/2016/git-control-ss-1.png">
-          <img src="img/gallery/2016/git-control-ss-1.png" />
-        </a>
-        <a href="img/gallery/2016/git-control-ss-1.png">
-          <img src="img/gallery/2016/git-control-ss-1.png" />
-        </a>
+        <script>
+        for (i=1; i<=13; i++) {
+        	document.write('<p class="gallery-img"><a href="https://seig-physics.github.io/site/test/' + i + '.jpg"><img src="https://seig-physics.github.io/site/test/' + i + '.jpg"></a></p>');
+        }
+        </script>
+      </div>
       </div>
     </div>
     <div id="margin-space"></div>
