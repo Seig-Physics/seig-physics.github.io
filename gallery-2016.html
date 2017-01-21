@@ -34,14 +34,14 @@
   <main>
     <div id="contents-main">
       <h1>2016年度　ギャラリー</h1>
-      <div class="gallery">
-      <div id="lightgallery">
+      <div id="lightgallery" class="gallery">
         <script>
-        for (i=1; i<=13; i++) {
-        	document.write('<p class="gallery-img"><a href="https://seig-physics.github.io/site/test/' + i + '.jpg"><img src="https://seig-physics.github.io/site/test/' + i + '.jpg"></a></p>');
-        }
+        document.addEventListener("DOMContentLoaded", function () {
+            for (i = 1; i <= 13; i++) {
+                document.body.innerHTML += '<div class="gallery-img"><a href="https://test.github.io/img/' + i + '.jpg"><img src="https://test.github.io/site/test/' + i + '.jpg"></a></div>';
+            }
+        }, false);
         </script>
-      </div>
       </div>
     </div>
     <div id="margin-space"></div>

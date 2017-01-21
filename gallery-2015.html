@@ -34,13 +34,14 @@
   <main>
     <div id="contents-main">
       <h1>2015年度　ギャラリー</h1>
-      <div id="lightgallery">
-        <a href="img/gallery/2016/git-control-ss-1.png">
-          <img src="img/gallery/2016/git-control-ss-1.png" />
-        </a>
-        <a href="img/gallery/2016/git-control-ss-1.png">
-          <img src="img/gallery/2016/git-control-ss-1.png" />
-        </a>
+      <div id="lightgallery" class="gallery">
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            for (i = 1; i <= 13; i++) {
+                document.body.innerHTML += '<div class="gallery-img"><a href="https://test.github.io/img/' + i + '.jpg"><img src="https://test.github.io/site/test/' + i + '.jpg"></a></div>';
+            }
+        }, false);
+        </script>
       </div>
     </div>
     <div id="margin-space"></div>
