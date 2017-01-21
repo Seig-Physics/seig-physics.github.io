@@ -191,28 +191,17 @@ nav li {
   padding: 0 1em 0 30px;
 }
 
-.gallery {
-  height: 600px;
-transform: translateZ(0);
-overflow-x: scroll;;
-  -webkit-overflow-scrolling: touch;
+.gallery-image {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    display: inline-block;
 }
-.gallery-img {
-  overflow: hidden;
-  width: 100px;/* トリミングしたい枠の幅 */
-  height: 100px;/* トリミングしたい枠の高さ */
-  position: relative;
-  display: inline-block;
-}
-.gallery-img img {
-  position: absolute;
-  width: auto;
-  height: 100%;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+
+.gallery-image img {
+    width: auto;
+    height: 100px;
+    overflow: hidden;
 }
 
 /* === lightGallery === */
