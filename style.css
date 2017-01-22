@@ -196,6 +196,7 @@ nav li {
     height: 100px;
     overflow: hidden;
     display: inline-block;
+    margin: 1px;
 }
 
 .gallery-image img {
@@ -207,8 +208,8 @@ nav li {
 /* === lightGallery === */
 @font-face {
   font-family: 'lg';
-  src: url("fonts/lightgallery/lg.eot");
-  src: url("fonts/lightgallery/lg.eot") format("embedded-opentype"), url("fonts/lightgallery/lg.woff") format("woff"), url("fonts/lightgallery/lg.ttf") format("truetype"), url("fonts/lightgallery/lg.svg") format("svg");
+  src: url("fonts/lightgallery/lg.eot?n1z373");
+  src: url("fonts/lightgallery/lg.eot?#iefixn1z373") format("embedded-opentype"), url("fonts/lightgallery/lg.woff?n1z373") format("woff"), url("fonts/lightgallery/lg.ttf?n1z373") format("truetype"), url("fonts/lightgallery/lg.svg?n1z373#lg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -220,6 +221,7 @@ nav li {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -381,16 +383,12 @@ nav li {
 }
 .lg-toolbar .lg-icon:hover {
   color: #FFF;
-  atransform: none;
-  animation: none;
-  transition: none;
 }
 .lg-toolbar .lg-close:after {
   content: "\e070";
 }
 .lg-toolbar .lg-download:after {
   content: "\e0f2";
-  height: 0;
 }
 .lg-sub-html {
   background-color: rgba(0, 0, 0, 0.45);
@@ -1084,6 +1082,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .lg-backdrop.in {
   opacity: 1;
 }
+
 .lg-css3.lg-no-trans .lg-prev-slide, .lg-css3.lg-no-trans .lg-next-slide, .lg-css3.lg-no-trans .lg-current {
   -webkit-transition: none 0s ease 0s !important;
   -moz-transition: none 0s ease 0s !important;
