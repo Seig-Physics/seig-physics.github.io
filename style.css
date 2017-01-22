@@ -151,6 +151,7 @@ nav li {
 img {
   background-image: url(js/load.gif);
   background-repeat: no-repeat;
+  background-position: center center;
 }
 
 /* === ProcessLine === */
