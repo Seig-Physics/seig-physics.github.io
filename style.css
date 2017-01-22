@@ -191,7 +191,7 @@ nav li {
   padding: 0 1em 0 30px;
 }
 
-.gallery-image {
+.gallery-img {
     width: 100px;
     height: 100px;
     overflow: hidden;
@@ -199,7 +199,7 @@ nav li {
     margin: 1px;
 }
 
-.gallery-image img {
+.gallery-img img {
     width: auto;
     height: 100px;
     overflow: hidden;
