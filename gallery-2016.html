@@ -11,7 +11,8 @@
   <![endif]-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.7/js/lightgallery.js"></script>
+  <script src="js/jquery.preload.js"></script>
+  <script src="https://cdn.jsdelivr.net/g/lightgallery,lg-autoplay"></script>
   <title>ギャラリー2016｜聖学院物理部</title>
 </head>
 <body>
@@ -47,13 +48,13 @@
             document.addEventListener("DOMContentLoaded", function () {
                 for (i = 1; i <= 12; i++) {
                     document.getElementById("lightgallery").insertAdjacentHTML('beforeend',
-                        '<a href="https://placehold.jp/3e80e4/ffffff/100x100.png?text=' + i + '.jpg" class="gallery-img">' +
+                        '<a href="https://placehold.jp/3e80e4/ffffff/100x100.png?text=' + i + '.jpg" class="gallery-img" download>' +
                         '<img src="https://placehold.jp/3e80e4/ffffff/100x100.png?text=' + i + '.jpg">' +
                         '</a>');
                 }
             }, false);
             $(document).ready(function () {
-                  $("#lightgallery").lightGallery();
+                  $("#lightgallery").lightGallery({pause:2500,speed:300});
               });
         </script>
       </div>

@@ -135,7 +135,7 @@ footer,header {
   color: #f3f3f3;
 }
 nav {
-    background: #3d80e4;
+    background: #3769c8;
     width: 100%;
     display: inline-block;
 }
@@ -148,9 +148,14 @@ nav li {
     padding: 10px 20px;
 }
 
+img {
+  background-image: url(js/load.gif);
+  background-repeat: no-repeat;
+}
+
 /* === ProcessLine === */
 .process {
-  border-left: 2px solid #3d80e4;
+  border-left: 2px solid #3769c8;
   margin-left: 10px;
 }
 .process tr:nth-child(odd) td:before {
@@ -159,7 +164,7 @@ nav li {
   height: 12px;
   display: inline-block;
   border-radius: 100%;
-  background: #3d80e4;
+  background: #3769c8;
   position: relative;
   left: -7px;
   bottom: 4px;
@@ -171,7 +176,7 @@ nav li {
 }
 .process tr:nth-child(odd) td:first-line {
   font-size: 24px;
-  color: #3d80e4;
+  color: #3769c8;
 }
 .process strong:first-of-type {
   font-size: 13px;
