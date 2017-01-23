@@ -127,7 +127,7 @@ input, select {
     min-width: 258px;
   }
   main {
-    padding: 30px 35px;
+    padding: 25px 35px;
   }
 }
 @media screen and (max-width:736px) {
@@ -218,16 +218,19 @@ nav li {
 }
 
 /* === Gallery === */
+#lightgallery {
+  margin: 0 auto;
+}
 .gallery-img {
-    width: 150px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
     overflow: hidden;
     display: inline-block;
     margin: 1px;
 }
 .gallery-img img {
     width: auto;
-    height: 150px;
+    height: 120px;
     overflow: hidden;
 }
 /** lightGallery **/

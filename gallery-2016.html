@@ -23,42 +23,20 @@
   <nav>
     <ul>
       <li>
-        <a href="/">HOME</a>
+        <a href="#">HOME</a>
       </li>
       <li>
         <a href="/club">部活紹介</a>
       </li>
       <li>
-        <a href="https://2001y.blogspot.com/p/blog-page.html">お問い合わせ</a>
+        <a href="#">お問い合わせ</a>
       </li>
     </ul>
   </nav>
   <main>
     <div id="contents-main">
       <h1>2016年度　ギャラリー 1</h1>
-      <div id="lightgallery">
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                for (i = 1; i <= 13; i++) {
-                    document.getElementById("lightgallery").insertAdjacentHTML('beforeend',
-                        '<a href="https://seig-physics.github.io/site/test/' + i + '.jpg" class="gallery-img">' +
-                        '<img src="https://seig-physics.github.io/site/test/' + i + '.jpg">' +
-                        '</a>');
-                }
-            }, false);
-            document.addEventListener("DOMContentLoaded", function () {
-                for (i = 1; i <= 12; i++) {
-                    document.getElementById("lightgallery").insertAdjacentHTML('beforeend',
-                        '<a href="https://placehold.jp/3e80e4/ffffff/100x100.png?text=' + i + '.jpg" class="gallery-img" download>' +
-                        '<img src="https://placehold.jp/3e80e4/ffffff/100x100.png?text=' + i + '.jpg">' +
-                        '</a>');
-                }
-            }, false);
-            $(document).ready(function () {
-                  $("#lightgallery").lightGallery({pause:2500,speed:300});
-              });
-        </script>
-      </div>
+      <div id="lightgallery"></div>
     </div>
     <div id="margin-space"></div>
     <div id="contents-side">
@@ -68,6 +46,27 @@
   </main>
   <footer>
     Copyright © 2017 聖学院物理部 All Rights Reserved.
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            for (i = 1; i <= 13; i++) {
+                document.getElementById("lightgallery").insertAdjacentHTML('beforeend',
+                    '<a href="https://seig-physics.github.io/site/test/' + i + '.jpg" class="gallery-img">' +
+                    '<img src="https://seig-physics.github.io/site/test/' + i + '.jpg">' +
+                    '</a>');
+            }
+        }, false);
+        document.addEventListener("DOMContentLoaded", function () {
+            for (i = 1; i <= 12; i++) {
+                document.getElementById("lightgallery").insertAdjacentHTML('beforeend',
+                    '<a href="https://placehold.jp/3e80e4/ffffff/100x100.png?text=' + i + '.jpg" class="gallery-img" download>' +
+                    '<img src="https://placehold.jp/3e80e4/ffffff/100x100.png?text=' + i + '.jpg">' +
+                    '</a>');
+            }
+        }, false);
+        $(document).ready(function () {
+              $("#lightgallery").lightGallery({pause:2500,speed:300});
+          });
+    </script>
     <script src='https://use.fontawesome.com/07715a7982.js'></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </footer>
