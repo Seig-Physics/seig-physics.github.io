@@ -103,28 +103,52 @@ input, select {
 }
 
 /* === CustomCSS === */
+@media screen and (min-width:737px) {
+  main {
+    display: table;
+    max-width: 980px;
+  }
+  [id^="contents"] {
+    background-color: #fefefe;
+    border: solid 1px #c6c6c6;
+    border-radius: 3px;
+    padding: 20px;
+    display: table-cell;
+  }
+  #contents-main {
+    max-width: 658px;
+    min-width: 498px;
+  }
+  #margin-space {
+    min-width: 10px;
+    display: table-cell;
+  }
+  #contents-side {
+    min-width: 258px;
+  }
+  main {
+    padding: 30px 35px;
+  }
+}
+@media screen and (max-width:736px) {
+  [id^="contents"] {
+    padding: 30px;
+  }
+  #margin-space {
+    min-height: 10px;
+  }
+  #contents-side {
+    min-width: 300px;
+  }
+  main {
+    padding: 0;
+  }
+}
 main {
-  display: table;
   margin: 0 auto;
-  padding: 30px 40px;
 }
 [id^="contents"] {
   background-color: #fefefe;
-  border: solid 1px #c6c6c6;
-  border-radius: 3px;
-  padding: 20px;
-  display: table-cell;
-}
-#contents-main {
-  width: 600px;
-  min-width: 500px;
-}
-#contents-side {
-  min-width: 300px;
-}
-#margin-space {
-  min-width: 10px;
-  display: table-cell;
 }
 footer,header {
   margin: 0 auto;
@@ -135,23 +159,19 @@ footer,header {
   color: #f3f3f3;
 }
 nav {
-    background: #3769c8;
-    width: 100%;
-    display: inline-block;
+  padding: 10px 0;
+  background: #3769c8;
+  display: block;
 }
 nav a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+}
+nav ul {
+  text-align: center;
 }
 nav li {
-    float: left;
-    padding: 10px 20px;
-}
-
-img {
-  background-image: url(js/load.gif);
-  background-repeat: no-repeat;
-  background-position: center center;
+  padding: 0 10px;
+  display: inline;
 }
 
 /* === ProcessLine === */
@@ -197,21 +217,20 @@ img {
   padding: 0 1em 0 30px;
 }
 
+/* === Gallery === */
 .gallery-img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 200px;
     overflow: hidden;
     display: inline-block;
     margin: 1px;
 }
-
 .gallery-img img {
     width: auto;
-    height: 100px;
+    height: 150px;
     overflow: hidden;
 }
-
-/* === lightGallery === */
+/** lightGallery **/
 @font-face {
   font-family: 'lg';
   src: url("fonts/lightgallery/lg.eot?n1z373");
