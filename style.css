@@ -132,7 +132,7 @@ input, select {
 }
 @media screen and (max-width:736px) {
   [id^="contents"] {
-    padding: 30px;
+    padding: 30px 20px;
   }
   #margin-space {
     min-height: 10px;
