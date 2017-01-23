@@ -218,20 +218,21 @@ nav li {
 }
 
 /* === Gallery === */
-#lightgallery {
-  margin: 0 auto;
-}
 .gallery-img {
-    width: 120px;
-    height: 120px;
-    overflow: hidden;
-    display: inline-block;
-    margin: 1px;
+  width: 120px;
+  height: 120px;
+  margin: 1px;
+  overflow: hidden;
 }
 .gallery-img img {
-    width: auto;
-    height: 120px;
-    overflow: hidden;
+  position: relative;
+	top: 50%;
+  left: 50%;
+  width: auto;
+  height: 100%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
 }
 /** lightGallery **/
 @font-face {
