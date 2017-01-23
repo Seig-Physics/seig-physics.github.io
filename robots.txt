@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://seig-physics.github.io/sitemap.xml
