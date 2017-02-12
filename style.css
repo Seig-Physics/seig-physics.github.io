@@ -134,14 +134,15 @@ input, select {
   }
 }
 @media screen and (max-width:736px) {
+  body {
+    font-size: 90%;
+  }
   [id^="contents"] {
-    padding: 30px 20px;
+    width: auto;
+    padding: 10px 10px;
   }
   #margin-space {
     min-height: 10px;
-  }
-  #contents-side {
-    min-width: 300px;
   }
   main {
     padding: 0;
@@ -180,8 +181,8 @@ nav li {
 /* === ProcessLine === */
 .process {
   border-left: 2px solid #3769c8;
-  margin-left: 10px
-  text-align:left;
+  margin-left: 10px;
+  text-align: left;
 }
 .process img {
   width: 100px;
