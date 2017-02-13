@@ -119,7 +119,7 @@ input, select {
     display: table-cell;
   }
   #contents-main {
-    max-width: 658px;
+    width: 658px;
     min-width: 498px;
   }
   #margin-space {
