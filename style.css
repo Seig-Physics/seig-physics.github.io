@@ -7,7 +7,7 @@ html {
   letter-spacing: 0.03em;
   word-wrap: break-word;
   overflow-wrap : break-word;
-  word-break: keep-all;
+  word-break: normal;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
