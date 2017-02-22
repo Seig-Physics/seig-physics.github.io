@@ -52,11 +52,24 @@
             for (i = 1; i <= 100; i++) {
                 document.getElementById("lightgallery").insertAdjacentHTML('beforeend',
                     '<a href="//placehold.jp/3e80e4/ffffff/500x300.png?text=' + i + '.jpg" class="gallery-img" download>' +
-                    '<img data-src="//placehold.jp/3e80e4/ffffff/500x300.png?text=' + i + '.jpg" class="lazyload">' +
+                    '<img data-src="//placehold.jp/3e80e4/ffffff/500x300.png?text=' + i + '.jpg" class="lazyload" data-adaptive-background>' +
                     '</a>');
             }
         }, false);
         $(document).ready(function(){
+          var adaptive_params = {
+            selector: '.lg-backdrop',
+            // 背景色を適用する対象セレクタ
+            parent: '.adaptive-target',
+            // 背景色の明度に合わせてフォントカラーを変更するかどうか
+            normalizeTextColor: true,
+            // 明度に合わせたフォントカラー
+            normalizedTextColors: {dark: '#000', light: '#fff'},
+            // 背景色適用範囲
+            // exclude: ['rgb(0,0,0)', 'rgba(255,255,255)'],
+            // 明度に合わせたクラス適用
+            // lumaClasses: {light: 'ab-light', dark: 'ab-dark'}
+          };
           $.adaptiveBackground.run();
           $("#lightgallery").lightGallery({pause:2500,speed:300});
         });
