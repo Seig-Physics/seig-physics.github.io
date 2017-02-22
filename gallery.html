@@ -52,12 +52,13 @@
             for (i = 1; i <= 100; i++) {
                 document.getElementById("lightgallery").insertAdjacentHTML('beforeend',
                     '<a href="//placehold.jp/3e80e4/ffffff/500x300.png?text=' + i + '.jpg" class="gallery-img" download>' +
-                    '<img data-src="//placehold.jp/3e80e4/ffffff/500x300.png?text=' + i + '.jpg" class="lazyload">' +
+                    '<img data-src="//placehold.jp/3e80e4/ffffff/500x300.png?text=' + i + '.jpg" class="lazyload" data-adaptive-background>' +
                     '</a>');
             }
         }, false);
-        $(document).ready(function () {
-              $("#lightgallery").lightGallery({pause:2500,speed:300});
+        $(document).ready(function(){
+          $.adaptiveBackground.run();
+          $("#lightgallery").lightGallery({pause:2500,speed:300});
         });
     </script>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
