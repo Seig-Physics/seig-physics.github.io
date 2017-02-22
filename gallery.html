@@ -44,7 +44,7 @@
               for (i = 1; i <= 100; i++) {
                   document.getElementById("lightgallery").insertAdjacentHTML('beforeend',
                       '<a href="//placehold.jp/3e80e4/ffffff/500x300.png?text=' + i + '.jpg" class="gallery-img" download>' +
-                      '<img src="//placehold.jp/3e80e4/ffffff/500x300.png?text=' + i + '.jpg" class="lazyload">' +
+                      '<img data-src="//placehold.jp/3e80e4/ffffff/500x300.png?text=' + i + '.jpg" class="lazyload">' +
                       '</a>');
               }
           }, false);
