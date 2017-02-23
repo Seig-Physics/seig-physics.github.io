@@ -1,5 +1,9 @@
 # 聖学院物理部のホームページ
 2017年の夏休みを目標にホームページを一から作っています。
+
+# メモ
+<script async defer src='//use.fontawesome.com/07715a7982.js'></script>
+
 ## GitHubページへようこそ　　　翻訳：Google
 [GitHubのエディタ](https://github.com/SeigPhysics/site/edit/master/README.md)を使用して、MarkdownファイルでWebサイトのコンテンツを管理し、プレビューすることができます。
 
