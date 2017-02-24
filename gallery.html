@@ -19,7 +19,7 @@
   <![endif]-->
 </head>
 <body>
-  <script src="//cdn.jsdelivr.net/g/lightgallery.js@1.0.1"></script>
+  <script src="//cdn.jsdelivr.net/g/lazysizes@3.0.0-rc4,lightgallery.js@1.0.1"></script>
   <header>
     聖学院物理部
   </header>
@@ -55,7 +55,7 @@
         document.addEventListener("DOMContentLoaded", function () {
           for (i = 1; i <= 100; i++) {
             document.getElementById("lightgallery").insertAdjacentHTML('beforeend',
-            '<a href="//placehold.jp/3e80e4/ffffff/500x300.png?text=' + i + '.jpg" download>' +
+            '<a href="//placehold.jp/3e80e4/ffffff/500x300.png?text=' + i + '.jpg" class="gallery-img" download>' +
             '<img src="//placehold.jp/3e80e4/ffffff/500x300.png?text=' + i + '.jpg" class="lazyload">' +
             '</a>');
           }
