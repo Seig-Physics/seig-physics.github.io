@@ -326,11 +326,11 @@ nav li {
 	-webkit-transform: translate(-50%,-50%);
 	transform: translate(-50%,-50%);
 }
-/** lightgallery - v1.3.9 - 2017-02-05 http://sachinchoolur.github.io/lightGallery/ Copyright (c) 2017 Sachin N; Licensed GPLv3 **/
+/** lightgallery.js | 1.0.1 | December 22nd 2016 http://sachinchoolur.github.io/lightgallery.js/ Copyright (c) 2016 Sachin N;  @license GPLv3  **/
 @font-face {
   font-family: 'lg';
-  src: url("https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.9/fonts/lg.eot?n1z373");
-  src: url("https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.9/fonts/lg.eot?#iefixn1z373") format("embedded-opentype"), url("https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.9/fonts/lg.woff?n1z373") format("woff"), url("https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.9/fonts/lg.ttf?n1z373") format("truetype"), url("https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.9/fonts/lg.svg?n1z373#lg") format("svg");
+  src: url("../fonts/lg.eot?n1z373");
+  src: url("../fonts/lg.eot?#iefixn1z373") format("embedded-opentype"), url("../fonts/lg.woff?n1z373") format("woff"), url("../fonts/lg.ttf?n1z373") format("truetype"), url("../fonts/lg.svg?n1z373#lg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -346,6 +346,7 @@ nav li {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .lg-actions .lg-next, .lg-actions .lg-prev {
   background-color: rgba(0, 0, 0, 0.45);
   border-radius: 2px;
@@ -378,7 +379,30 @@ nav li {
 .lg-actions .lg-prev:after {
   content: "\e094";
 }
+
 @-webkit-keyframes lg-right-end {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -30px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-moz-keyframes lg-right-end {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -30px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-ms-keyframes lg-right-end {
   0% {
     left: 0;
   }
@@ -411,6 +435,28 @@ nav li {
     left: 0;
   }
 }
+@-moz-keyframes lg-left-end {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 30px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-ms-keyframes lg-left-end {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 30px;
+  }
+  100% {
+    left: 0;
+  }
+}
 @keyframes lg-left-end {
   0% {
     left: 0;
@@ -424,14 +470,17 @@ nav li {
 }
 .lg-outer.lg-right-end .lg-object {
   -webkit-animation: lg-right-end 0.3s;
+  -o-animation: lg-right-end 0.3s;
   animation: lg-right-end 0.3s;
   position: relative;
 }
 .lg-outer.lg-left-end .lg-object {
   -webkit-animation: lg-left-end 0.3s;
+  -o-animation: lg-left-end 0.3s;
   animation: lg-left-end 0.3s;
   position: relative;
 }
+
 .lg-toolbar {
   z-index: 1082;
   left: 0;
@@ -453,6 +502,7 @@ nav li {
   text-decoration: none !important;
   outline: medium none;
   -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
   transition: color 0.2s linear;
 }
 .lg-toolbar .lg-icon:hover {
@@ -464,6 +514,7 @@ nav li {
 .lg-toolbar .lg-download:after {
   content: "\e0f2";
 }
+
 .lg-sub-html {
   background-color: rgba(0, 0, 0, 0.45);
   bottom: 0;
@@ -485,6 +536,7 @@ nav li {
   font-size: 12px;
   margin: 5px 0 0;
 }
+
 #lg-counter {
   color: #999;
   display: inline-block;
@@ -493,14 +545,15 @@ nav li {
   padding-top: 12px;
   vertical-align: middle;
 }
+
 .lg-toolbar, .lg-prev, .lg-next {
   opacity: 1;
   -webkit-transition: -webkit-transform 0.35s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.35s cubic-bezier(0, 0, 0.25, 1) 0s, color 0.2s linear;
-  -webkit-transition: opacity 0.35s cubic-bezier(0, 0, 0.25, 1) 0s, color 0.2s linear, -webkit-transform 0.35s cubic-bezier(0, 0, 0.25, 1) 0s;
-  transition: opacity 0.35s cubic-bezier(0, 0, 0.25, 1) 0s, color 0.2s linear, -webkit-transform 0.35s cubic-bezier(0, 0, 0.25, 1) 0s;
+  -moz-transition: -moz-transform 0.35s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.35s cubic-bezier(0, 0, 0.25, 1) 0s, color 0.2s linear;
+  -o-transition: -o-transform 0.35s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.35s cubic-bezier(0, 0, 0.25, 1) 0s, color 0.2s linear;
   transition: transform 0.35s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.35s cubic-bezier(0, 0, 0.25, 1) 0s, color 0.2s linear;
-  transition: transform 0.35s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.35s cubic-bezier(0, 0, 0.25, 1) 0s, color 0.2s linear, -webkit-transform 0.35s cubic-bezier(0, 0, 0.25, 1) 0s;
 }
+
 .lg-hide-items .lg-prev {
   opacity: 0;
   -webkit-transform: translate3d(-10px, 0, 0);
@@ -516,16 +569,18 @@ nav li {
   -webkit-transform: translate3d(0, -10px, 0);
   transform: translate3d(0, -10px, 0);
 }
+
 body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-object {
   -webkit-transform: scale3d(0.5, 0.5, 0.5);
   transform: scale3d(0.5, 0.5, 0.5);
   opacity: 0;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0, 0, 0.25, 1) 0s, opacity 250ms cubic-bezier(0, 0, 0.25, 1) !important;
-  -webkit-transition: opacity 250ms cubic-bezier(0, 0, 0.25, 1), -webkit-transform 250ms cubic-bezier(0, 0, 0.25, 1) 0s !important;
-  transition: opacity 250ms cubic-bezier(0, 0, 0.25, 1), -webkit-transform 250ms cubic-bezier(0, 0, 0.25, 1) 0s !important;
+  -moz-transition: -moz-transform 250ms cubic-bezier(0, 0, 0.25, 1) 0s, opacity 250ms cubic-bezier(0, 0, 0.25, 1) !important;
+  -o-transition: -o-transform 250ms cubic-bezier(0, 0, 0.25, 1) 0s, opacity 250ms cubic-bezier(0, 0, 0.25, 1) !important;
   transition: transform 250ms cubic-bezier(0, 0, 0.25, 1) 0s, opacity 250ms cubic-bezier(0, 0, 0.25, 1) !important;
-  transition: transform 250ms cubic-bezier(0, 0, 0.25, 1) 0s, opacity 250ms cubic-bezier(0, 0, 0.25, 1), -webkit-transform 250ms cubic-bezier(0, 0, 0.25, 1) 0s !important;
   -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
 }
 body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object {
@@ -533,6 +588,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   transform: scale3d(1, 1, 1);
   opacity: 1;
 }
+
 .lg-outer .lg-thumb-outer {
   background-color: #0D0A0A;
   bottom: 0;
@@ -543,12 +599,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   -webkit-transform: translate3d(0, 100%, 0);
   transform: translate3d(0, 100%, 0);
   -webkit-transition: -webkit-transform 0.25s cubic-bezier(0, 0, 0.25, 1) 0s;
-  transition: -webkit-transform 0.25s cubic-bezier(0, 0, 0.25, 1) 0s;
+  -moz-transition: -moz-transform 0.25s cubic-bezier(0, 0, 0.25, 1) 0s;
+  -o-transition: -o-transform 0.25s cubic-bezier(0, 0, 0.25, 1) 0s;
   transition: transform 0.25s cubic-bezier(0, 0, 0.25, 1) 0s;
-  transition: transform 0.25s cubic-bezier(0, 0, 0.25, 1) 0s, -webkit-transform 0.25s cubic-bezier(0, 0, 0.25, 1) 0s;
 }
 .lg-outer .lg-thumb-outer.lg-grab .lg-thumb-item {
   cursor: -webkit-grab;
+  cursor: -moz-grab;
   cursor: -o-grab;
   cursor: -ms-grab;
   cursor: grab;
@@ -556,6 +613,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .lg-outer .lg-thumb-outer.lg-grabbing .lg-thumb-item {
   cursor: move;
   cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
   cursor: -o-grabbing;
   cursor: -ms-grabbing;
   cursor: grabbing;
@@ -586,6 +644,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 @media (min-width: 1025px) {
   .lg-outer .lg-thumb-item {
     -webkit-transition: border-color 0.25s ease;
+    -o-transition: border-color 0.25s ease;
     transition: border-color 0.25s ease;
   }
 }
@@ -595,8 +654,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .lg-outer .lg-thumb-item img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .lg-outer.lg-has-thumb .lg-item {
   padding-bottom: 120px;
@@ -606,12 +664,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .lg-outer.lg-pull-caption-up .lg-sub-html {
   -webkit-transition: bottom 0.25s ease;
+  -o-transition: bottom 0.25s ease;
   transition: bottom 0.25s ease;
 }
 .lg-outer.lg-pull-caption-up.lg-thumb-open .lg-sub-html {
   bottom: 100px;
 }
-.lg-outer .lg-toogle-thumb {
+.lg-outer .lg-toggle-thumb {
   background-color: #0D0A0A;
   border-radius: 2px 2px 0 0;
   color: #999;
@@ -626,12 +685,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   top: -39px;
   width: 50px;
 }
-.lg-outer .lg-toogle-thumb:after {
+.lg-outer .lg-toggle-thumb:after {
   content: "\e1ff";
 }
-.lg-outer .lg-toogle-thumb:hover {
+.lg-outer .lg-toggle-thumb:hover {
   color: #FFF;
 }
+
 .lg-outer .lg-video-cont {
   display: inline-block;
   vertical-align: middle;
@@ -667,13 +727,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   cursor: pointer;
 }
 .lg-outer .lg-has-vimeo .lg-video-play {
-  background: url("https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.9/img/vimeo-play.png") no-repeat scroll 0 0 transparent;
+  background: url("../img/vimeo-play.png") no-repeat scroll 0 0 transparent;
 }
 .lg-outer .lg-has-vimeo:hover .lg-video-play {
-  background: url("https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.9/img/vimeo-play.png") no-repeat scroll 0 -58px transparent;
+  background: url("../img/vimeo-play.png") no-repeat scroll 0 -58px transparent;
 }
 .lg-outer .lg-has-html5 .lg-video-play {
-  background: transparent url("https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.9/img/video-play.png") no-repeat scroll 0 0;
+  background: transparent url("../img/video-play.png") no-repeat scroll 0 0;
   height: 64px;
   margin-left: -32px;
   margin-top: -32px;
@@ -684,10 +744,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   opacity: 1;
 }
 .lg-outer .lg-has-youtube .lg-video-play {
-  background: url("https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.9/img/youtube-play.png") no-repeat scroll 0 0 transparent;
+  background: url("../img/youtube-play.png") no-repeat scroll 0 0 transparent;
 }
 .lg-outer .lg-has-youtube:hover .lg-video-play {
-  background: url("https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.9/img/youtube-play.png") no-repeat scroll 0 -60px transparent;
+  background: url("../img/youtube-play.png") no-repeat scroll 0 -60px transparent;
 }
 .lg-outer .lg-video-object {
   width: 100% !important;
@@ -705,6 +765,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .lg-outer .lg-has-video.lg-video-playing .lg-video-object {
   visibility: visible;
 }
+
 .lg-progress-bar {
   background-color: #333;
   height: 5px;
@@ -715,6 +776,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   z-index: 1083;
   opacity: 0;
   -webkit-transition: opacity 0.08s ease 0s;
+  -moz-transition: opacity 0.08s ease 0s;
+  -o-transition: opacity 0.08s ease 0s;
   transition: opacity 0.08s ease 0s;
 }
 .lg-progress-bar .lg-progress {
@@ -728,54 +791,64 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .lg-show-autoplay .lg-progress-bar {
   opacity: 1;
 }
+
 .lg-autoplay-button:after {
   content: "\e01d";
 }
 .lg-show-autoplay .lg-autoplay-button:after {
   content: "\e01a";
 }
+
 .lg-outer.lg-css3.lg-zoom-dragging .lg-item.lg-complete.lg-zoomable .lg-img-wrap, .lg-outer.lg-css3.lg-zoom-dragging .lg-item.lg-complete.lg-zoomable .lg-image {
   -webkit-transition-duration: 0s;
   transition-duration: 0s;
 }
 .lg-outer.lg-use-transition-for-zoom .lg-item.lg-complete.lg-zoomable .lg-img-wrap {
   -webkit-transition: -webkit-transform 0.3s cubic-bezier(0, 0, 0.25, 1) 0s;
-  transition: -webkit-transform 0.3s cubic-bezier(0, 0, 0.25, 1) 0s;
+  -moz-transition: -moz-transform 0.3s cubic-bezier(0, 0, 0.25, 1) 0s;
+  -o-transition: -o-transform 0.3s cubic-bezier(0, 0, 0.25, 1) 0s;
   transition: transform 0.3s cubic-bezier(0, 0, 0.25, 1) 0s;
-  transition: transform 0.3s cubic-bezier(0, 0, 0.25, 1) 0s, -webkit-transform 0.3s cubic-bezier(0, 0, 0.25, 1) 0s;
 }
 .lg-outer.lg-use-left-for-zoom .lg-item.lg-complete.lg-zoomable .lg-img-wrap {
   -webkit-transition: left 0.3s cubic-bezier(0, 0, 0.25, 1) 0s, top 0.3s cubic-bezier(0, 0, 0.25, 1) 0s;
+  -moz-transition: left 0.3s cubic-bezier(0, 0, 0.25, 1) 0s, top 0.3s cubic-bezier(0, 0, 0.25, 1) 0s;
+  -o-transition: left 0.3s cubic-bezier(0, 0, 0.25, 1) 0s, top 0.3s cubic-bezier(0, 0, 0.25, 1) 0s;
   transition: left 0.3s cubic-bezier(0, 0, 0.25, 1) 0s, top 0.3s cubic-bezier(0, 0, 0.25, 1) 0s;
 }
 .lg-outer .lg-item.lg-complete.lg-zoomable .lg-img-wrap {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 .lg-outer .lg-item.lg-complete.lg-zoomable .lg-image {
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
   -webkit-transition: -webkit-transform 0.3s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.15s !important;
-  -webkit-transition: opacity 0.15s, -webkit-transform 0.3s cubic-bezier(0, 0, 0.25, 1) 0s !important;
-  transition: opacity 0.15s, -webkit-transform 0.3s cubic-bezier(0, 0, 0.25, 1) 0s !important;
+  -moz-transition: -moz-transform 0.3s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.15s !important;
+  -o-transition: -o-transform 0.3s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.15s !important;
   transition: transform 0.3s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.15s !important;
-  transition: transform 0.3s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.15s, -webkit-transform 0.3s cubic-bezier(0, 0, 0.25, 1) 0s !important;
   -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
 #lg-zoom-in:after {
   content: "\e311";
 }
+
 #lg-actual-size {
   font-size: 20px;
 }
 #lg-actual-size:after {
   content: "\e033";
 }
+
 #lg-zoom-out {
   opacity: 0.5;
   pointer-events: none;
@@ -787,6 +860,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   opacity: 1;
   pointer-events: auto;
 }
+
 .lg-outer .lg-pager-outer {
   bottom: 60px;
   left: 0;
@@ -829,9 +903,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   width: 120px;
   border-radius: 3px;
   -webkit-transition: opacity 0.15s ease 0s, -webkit-transform 0.15s ease 0s;
-  transition: opacity 0.15s ease 0s, -webkit-transform 0.15s ease 0s;
+  -moz-transition: opacity 0.15s ease 0s, -moz-transform 0.15s ease 0s;
+  -o-transition: opacity 0.15s ease 0s, -o-transform 0.15s ease 0s;
   transition: opacity 0.15s ease 0s, transform 0.15s ease 0s;
-  transition: opacity 0.15s ease 0s, transform 0.15s ease 0s, -webkit-transform 0.15s ease 0s;
   -webkit-transform: translate3d(0, 5px, 0);
   transform: translate3d(0, 5px, 0);
 }
@@ -846,6 +920,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   display: block;
   height: 12px;
   -webkit-transition: box-shadow 0.3s ease 0s;
+  -o-transition: box-shadow 0.3s ease 0s;
   transition: box-shadow 0.3s ease 0s;
   width: 12px;
 }
@@ -865,12 +940,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   vertical-align: middle;
   width: 0;
 }
+
 .lg-fullscreen:after {
   content: "\e20c";
 }
 .lg-fullscreen-on .lg-fullscreen:after {
   content: "\e20d";
 }
+
 .lg-outer #lg-dropdown-overlay {
   background-color: rgba(0, 0, 0, 0.25);
   bottom: 0;
@@ -883,11 +960,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   opacity: 0;
   visibility: hidden;
   -webkit-transition: visibility 0s linear 0.18s, opacity 0.18s linear 0s;
+  -o-transition: visibility 0s linear 0.18s, opacity 0.18s linear 0s;
   transition: visibility 0s linear 0.18s, opacity 0.18s linear 0s;
 }
 .lg-outer.lg-dropdown-active .lg-dropdown, .lg-outer.lg-dropdown-active #lg-dropdown-overlay {
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
+  -moz-transform: translate3d(0, 0px, 0);
+  -o-transform: translate3d(0, 0px, 0);
+  -ms-transform: translate3d(0, 0px, 0);
   -webkit-transform: translate3d(0, 0px, 0);
   transform: translate3d(0, 0px, 0);
   opacity: 1;
@@ -909,13 +990,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   top: 50px;
   opacity: 0;
   visibility: hidden;
+  -moz-transform: translate3d(0, 5px, 0);
+  -o-transform: translate3d(0, 5px, 0);
+  -ms-transform: translate3d(0, 5px, 0);
   -webkit-transform: translate3d(0, 5px, 0);
   transform: translate3d(0, 5px, 0);
   -webkit-transition: -webkit-transform 0.18s linear 0s, visibility 0s linear 0.5s, opacity 0.18s linear 0s;
-  -webkit-transition: visibility 0s linear 0.5s, opacity 0.18s linear 0s, -webkit-transform 0.18s linear 0s;
-  transition: visibility 0s linear 0.5s, opacity 0.18s linear 0s, -webkit-transform 0.18s linear 0s;
+  -moz-transition: -moz-transform 0.18s linear 0s, visibility 0s linear 0.5s, opacity 0.18s linear 0s;
+  -o-transition: -o-transform 0.18s linear 0s, visibility 0s linear 0.5s, opacity 0.18s linear 0s;
   transition: transform 0.18s linear 0s, visibility 0s linear 0.5s, opacity 0.18s linear 0s;
-  transition: transform 0.18s linear 0s, visibility 0s linear 0.5s, opacity 0.18s linear 0s, -webkit-transform 0.18s linear 0s;
 }
 .lg-outer .lg-dropdown:after {
   content: "";
@@ -993,11 +1076,21 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .lg-outer #lg-share-pinterest .lg-icon:after {
   content: "\e903";
 }
-.group:after {
-  content: "";
+
+.group {
+  *zoom: 1;
+}
+
+.group:before, .group:after {
   display: table;
+  content: "";
+  line-height: 0;
+}
+
+.group:after {
   clear: both;
 }
+
 .lg-outer {
   width: 100%;
   height: 100%;
@@ -1007,9 +1100,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   z-index: 1050;
   opacity: 0;
   -webkit-transition: opacity 0.15s ease 0s;
+  -o-transition: opacity 0.15s ease 0s;
   transition: opacity 0.15s ease 0s;
 }
 .lg-outer * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 .lg-outer.lg-visible {
@@ -1028,6 +1124,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .lg-outer.lg-grab img.lg-object {
   cursor: -webkit-grab;
+  cursor: -moz-grab;
   cursor: -o-grab;
   cursor: -ms-grab;
   cursor: grab;
@@ -1035,6 +1132,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .lg-outer.lg-grabbing img.lg-object {
   cursor: move;
   cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
   cursor: -o-grabbing;
   cursor: -ms-grabbing;
   cursor: grabbing;
@@ -1058,7 +1156,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   white-space: nowrap;
 }
 .lg-outer .lg-item {
-  background: url("https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.9/img/loading.gif") no-repeat scroll center center transparent;
+  background: url("../img/loading.gif") no-repeat scroll center center transparent;
   display: none !important;
 }
 .lg-outer.lg-css3 .lg-prev-slide, .lg-outer.lg-css3 .lg-current, .lg-outer.lg-css3 .lg-next-slide {
@@ -1106,6 +1204,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .lg-outer.lg-show-after-load .lg-item .lg-object, .lg-outer.lg-show-after-load .lg-item .lg-video-play {
   opacity: 0;
   -webkit-transition: opacity 0.15s ease 0s;
+  -o-transition: opacity 0.15s ease 0s;
   transition: opacity 0.15s ease 0s;
 }
 .lg-outer.lg-show-after-load .lg-item.lg-complete .lg-object, .lg-outer.lg-show-after-load .lg-item.lg-complete .lg-video-play {
@@ -1117,6 +1216,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .lg-outer.lg-hide-download #lg-download {
   display: none;
 }
+
 .lg-backdrop {
   position: fixed;
   top: 0;
@@ -1127,6 +1227,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   background-color: #000;
   opacity: 0;
   -webkit-transition: opacity 0.15s ease 0s;
+  -o-transition: opacity 0.15s ease 0s;
   transition: opacity 0.15s ease 0s;
 }
 .lg-backdrop.in {
@@ -1135,14 +1236,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .lg-css3.lg-no-trans .lg-prev-slide, .lg-css3.lg-no-trans .lg-next-slide, .lg-css3.lg-no-trans .lg-current {
   -webkit-transition: none 0s ease 0s !important;
+  -moz-transition: none 0s ease 0s !important;
+  -o-transition: none 0s ease 0s !important;
   transition: none 0s ease 0s !important;
 }
 .lg-css3.lg-use-css3 .lg-item {
   -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 .lg-css3.lg-use-left .lg-item {
   -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 .lg-css3.lg-fade .lg-item {
@@ -1153,6 +1258,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .lg-css3.lg-fade .lg-item.lg-prev-slide, .lg-css3.lg-fade .lg-item.lg-next-slide, .lg-css3.lg-fade .lg-item.lg-current {
   -webkit-transition: opacity 0.1s ease 0s;
+  -moz-transition: opacity 0.1s ease 0s;
+  -o-transition: opacity 0.1s ease 0s;
   transition: opacity 0.1s ease 0s;
 }
 .lg-css3.lg-slide.lg-use-css3 .lg-item {
@@ -1173,10 +1280,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-prev-slide, .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-next-slide, .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
   -webkit-transition: -webkit-transform 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
-  -webkit-transition: opacity 0.1s ease 0s, -webkit-transform 1s cubic-bezier(0, 0, 0.25, 1) 0s;
-  transition: opacity 0.1s ease 0s, -webkit-transform 1s cubic-bezier(0, 0, 0.25, 1) 0s;
+  -moz-transition: -moz-transform 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
+  -o-transition: -o-transform 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
   transition: transform 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
-  transition: transform 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s, -webkit-transform 1s cubic-bezier(0, 0, 0.25, 1) 0s;
 }
 .lg-css3.lg-slide.lg-use-left .lg-item {
   opacity: 0;
@@ -1195,5 +1301,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .lg-css3.lg-slide.lg-use-left .lg-item.lg-prev-slide, .lg-css3.lg-slide.lg-use-left .lg-item.lg-next-slide, .lg-css3.lg-slide.lg-use-left .lg-item.lg-current {
   -webkit-transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
+  -moz-transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
+  -o-transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
   transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
 }
