@@ -168,7 +168,7 @@ main {
 [id^="contents"] {
   background-color: #fefefe;
 }
-footer, header {
+footer{
   margin: 0 auto;
   padding: 30px;
   text-align: center;
