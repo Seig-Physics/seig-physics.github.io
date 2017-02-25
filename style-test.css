@@ -177,7 +177,7 @@ footer, header {
   color: #f3f3f3;
 }
 label {
-    background: green;
+    background: #3769c8;
     color: #fff;
     padding: 10px;
     display: block;
@@ -190,9 +190,6 @@ input[type="checkbox"].on-off{
 input[type="checkbox"].on-off + ul{
     height: 0;
     overflow: hidden;
-}
-input[type="checkbox"].on-off:checked + ul{
-    height: 200px;
 }
 nav {
   padding: 10px 0;
