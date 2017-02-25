@@ -214,66 +214,6 @@ nav input[type="checkbox"].on-off:checked + ul{
   height: auto;
 }
 
-
-.spmenu_btn {
-    display:block;
-    position:absolute;
-    top:14px;
-    right:15px;
-    width:30px;
-    height:22px;
-    background:#000;
-    border-top:10px solid #fff;
-    border-bottom:10px solid #fff;
-    -moz-box-sizing:border-box;
-    -webkit-box-sizing:border-box;
-    box-sizing:border-box;
-    -moz-transition:all 0.3s;
-    -webkit-transition:all 0.3s;
-    transition:all 0.3s;
-}
-.spmenu_btn:before {
-    content:'';
-    position:absolute;
-    width:30px;
-    height:2px;
-    background:#000;
-    top:-9px;
-    right:0;
-    -moz-transition:all 0.3s;
-    -webkit-transition:all 0.3s;
-    transition:all 0.3s;
-}
-.spmenu_btn:after {
-    content:'';
-    position:absolute;
-    width:30px;
-    height:2px;
-    background:#000;
-    bottom:-9px;
-    right:0;
-    -moz-transition:all 0.3s;
-    -webkit-transition:all 0.3s;
-    transition:all 0.3s;
-}
-.spmenu_btn.active {
-    background:#FFF;
-}
-.spmenu_btn.active:before {
-    -moz-transform:rotate(-135deg);
-    -webkit-transform:rotate(-135deg);
-    transform:rotate(-135deg);
-    top:0;
-    right:0;
-}
-.spmenu_btn.active:after {
-    -moz-transform:rotate(135deg);
-    -webkit-transform:rotate(135deg);
-    transform:rotate(135deg);
-    bottom:0;
-    right:0;
-}
-
 /** Rounded Mplus Font **/
 
 @font-face {
