@@ -176,7 +176,7 @@ header,footer{
   height: 70px;
   color: #f3f3f3;
 }
-nav label {
+label {
     color: #fff;
     padding: 10px;
     text-align: right;
@@ -185,7 +185,7 @@ nav label {
     border: 1px solid #fff;
 }
 
-nav input[type="checkbox"].on-off{
+input[type="checkbox"].on-off{
     display: none;
 }
 
@@ -204,12 +204,12 @@ nav li {
     padding: 5px;
 }
 
-nav input[type="checkbox"].on-off + ul{
+input[type="checkbox"].on-off + ul{
     height: 0;
     overflow: hidden;
 }
 
-nav input[type="checkbox"].on-off:checked + ul{
+input[type="checkbox"].on-off:checked + ul{
     height: 200px;
 }
 
