@@ -202,6 +202,9 @@ nav ul {
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 nav li {
   padding: 5px;
