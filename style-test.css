@@ -178,7 +178,7 @@ header,footer{
 }
 
 /** MENU **/
-nav a {
+nav a,nav a:hover:after {
   color: #f3f3f3;
 }
 nav label {
