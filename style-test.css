@@ -172,7 +172,7 @@ header,footer{
   margin: 0 auto;
   padding: 30px 0;
   text-align: center;
-  background: #3769c8;
+  background: #3e80e4;
   height: 70px;
   color: #f3f3f3;
 }
@@ -180,9 +180,6 @@ header,footer{
 /** MENU **/
 nav a {
   color: #f3f3f3;
-}
-nav a:hover:after {
-  background-color: #fefefe;
 }
 nav label {
   padding: 10px;
