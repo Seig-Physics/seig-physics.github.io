@@ -91,7 +91,7 @@ a:hover {
   -webkit-animation: zoom .3s;
   animation: zoom .3s;
 }
-a:hover:after:not([id^="lg"],nav) {
+a:hover:after:not([id^="lg"]) {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -180,6 +180,9 @@ header,footer{
 /** MENU **/
 nav a {
   color: #f3f3f3;
+}
+nav a:hover:after {
+  background-color: #fefefe;
 }
 nav label {
   padding: 10px;
