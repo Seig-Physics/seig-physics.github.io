@@ -181,7 +181,6 @@ label {
     color: #fff;
     padding: 10px;
     margin: 0 0 0 auto;
-    border: 1px solid #fff;
 }
 input[type="checkbox"].on-off{
     display: none;
