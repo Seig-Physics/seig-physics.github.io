@@ -180,9 +180,8 @@ label {
     color: #fff;
     padding: 10px;
     text-align: right;
-    display: block;
+    display: inline-block;
     margin: 0;
-    border: 1px solid #fff;
 }
 
 input[type="checkbox"].on-off{
