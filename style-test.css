@@ -187,6 +187,13 @@ label {
 input[type="checkbox"].on-off{
     display: none;
 }
+input[type="checkbox"].on-off + ul{
+    height: 0;
+    overflow: hidden;
+}
+input[type="checkbox"].on-off:checked + ul{
+    height: 200px;
+}
 nav {
   padding: 10px 0;
   background: #3769c8;
