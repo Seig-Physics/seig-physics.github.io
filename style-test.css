@@ -78,6 +78,7 @@ body {
   overflow-wrap: break-word;
   word-break: normal;
   background-color: #f8f8f8;
+  z-index: 0;
 }
 a {
   color: #3e80e4;
@@ -202,9 +203,7 @@ nav ul {
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  z-index: 1;
 }
 nav li {
   padding: 5px;
