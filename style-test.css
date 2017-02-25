@@ -186,6 +186,8 @@ nav a {
   color: #f3f3f3;
 }
 nav label {
+  background: #3769c8;
+  text-align: right;
   padding: 10px;
   text-align: right;
   display: block;
