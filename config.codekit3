@@ -7,7 +7,7 @@
 		"uuidString": "5D05E6A0-5B5F-48A2-9211-D61EFD2760ED"
 		}
 	],
-"creatorBuild": "25504",
+"creatorBuild": "25568",
 "files": {
 	"\/_config.yml": {
 		"ft": 8192,
@@ -19,6 +19,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/camp.html",
+		"oF": 0
+		},
+	"\/gallery-test.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/gallery-test.html",
 		"oF": 0
 		},
 	"\/gallery.html": {
@@ -63,6 +69,26 @@
 		"oAP": "\/schedule.html",
 		"oF": 0
 		},
+	"\/style-test.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/style-test-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/style-test.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/style-test.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -71,7 +97,7 @@
 		"oA": 0,
 		"oAP": "\/style-min.css",
 		"oF": 0,
-		"oS": 2
+		"oS": 0
 		},
 	"\/style.min.css": {
 		"aP": 1,
@@ -964,6 +990,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-multi-assign": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-multi-spaces": {
 			"active": 0,
 			"optionString": "{'exceptions': {'Property': true, 'BinaryExpression': false, 'VariableDeclarator': false, 'ImportDeclaration': false}}"
@@ -1292,6 +1322,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"prefer-promise-reject-errors": {
+			"active": 0,
+			"optionString": "{'allowEmptyReject': false}"
+			},
 		"prefer-rest-params": {
 			"active": 0,
 			"optionString": ""
@@ -1385,6 +1419,10 @@
 			"optionString": ""
 			},
 		"template-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"template-tag-spacing": {
 			"active": 0,
 			"optionString": "'never'"
 			},
