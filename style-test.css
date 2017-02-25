@@ -202,7 +202,6 @@ nav ul {
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-  z-index: 1;
 }
 nav li {
   padding: 5px;
