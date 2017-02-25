@@ -170,17 +170,16 @@ main {
   background-color: #fefefe;
 }
 header,footer{
+  margin: 0 auto;
   text-align: center;
   background: #3e80e4;
   height: auto;
   color: #f3f3f3;
 }
 header {
-  margin: 30px 0 auto;
-  padding: 30px 0 0;
+  padding: 60px 0 0;
 }
 footer {
-  margin: 0 auto;
   padding: 30px 0;
 }
 /** MENU **/
