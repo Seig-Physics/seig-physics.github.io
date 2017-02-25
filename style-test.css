@@ -182,6 +182,9 @@ header {
     height:50px;
     top:0;
     left:0;
+    background:#FFF;
+    border-bottom:1px solid #000;
+    z-index:100;
 }
 .spmenu_btn {
     display:block;
