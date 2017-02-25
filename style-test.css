@@ -191,7 +191,6 @@ input[type="checkbox"].on-off{
 nav ul {
   color: #f3f3f3;
   background: #3769c8;
-  height: auto;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -204,6 +203,9 @@ nav li {
 input[type="checkbox"].on-off + ul{
   height: 0;
   overflow: hidden;
+}
+input[type="checkbox"].on-off:checked + ul{
+  height: auto;
 }
 
 /** Rounded Mplus Font **/
