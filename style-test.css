@@ -215,7 +215,7 @@ nav input[type="checkbox"].on-off:checked + ul{
 }
 
 
-label {
+.spmenu_btn {
     display:block;
     position:absolute;
     top:14px;
@@ -232,7 +232,7 @@ label {
     -webkit-transition:all 0.3s;
     transition:all 0.3s;
 }
-label:before {
+.spmenu_btn:before {
     content:'';
     position:absolute;
     width:30px;
@@ -244,7 +244,7 @@ label:before {
     -webkit-transition:all 0.3s;
     transition:all 0.3s;
 }
-label:after {
+.spmenu_btn:after {
     content:'';
     position:absolute;
     width:30px;
@@ -256,17 +256,17 @@ label:after {
     -webkit-transition:all 0.3s;
     transition:all 0.3s;
 }
-label.active {
+.spmenu_btn.active {
     background:#FFF;
 }
-label.active:before {
+.spmenu_btn.active:before {
     -moz-transform:rotate(-135deg);
     -webkit-transform:rotate(-135deg);
     transform:rotate(-135deg);
     top:0;
     right:0;
 }
-label.active:after {
+.spmenu_btn.active:after {
     -moz-transform:rotate(135deg);
     -webkit-transform:rotate(135deg);
     transform:rotate(135deg);
