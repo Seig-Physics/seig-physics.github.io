@@ -178,12 +178,9 @@ header,footer{
 }
 
 /** MENU **/
-nav {
+label {
   color: #f3f3f3;
   background: #3769c8;
-  display: block;
-}
-label {
   padding: 10px;
   text-align: right;
   display: block;
@@ -192,6 +189,8 @@ input[type="checkbox"].on-off{
     display: none;
 }
 nav ul {
+  color: #f3f3f3;
+  background: #3769c8;
   height: auto;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
