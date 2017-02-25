@@ -168,7 +168,7 @@ main {
 [id^="contents"] {
   background-color: #fefefe;
 }
-footer{
+header,footer{
   margin: 0 auto;
   padding: 30px;
   text-align: center;
@@ -176,97 +176,41 @@ footer{
   height: 70px;
   color: #f3f3f3;
 }
-header {
-    position:fixed;
-    width:100%;
-    height:50px;
-    top:0;
-    left:0;
-    background:#FFF;
-    border-bottom:1px solid #000;
-    z-index:100;
-}
-.spmenu_btn {
-    display:block;
-    position:absolute;
-    top:14px;
-    right:15px;
-    width:30px;
-    height:22px;
-    background:#000;
-    border-top:10px solid #fff;
-    border-bottom:10px solid #fff;
-    -moz-box-sizing:border-box;
-    -webkit-box-sizing:border-box;
-    box-sizing:border-box;
-    -moz-transition:all 0.3s;
-    -webkit-transition:all 0.3s;
-    transition:all 0.3s;
-}
-.spmenu_btn:before {
-    content:'';
-    position:absolute;
-    width:30px;
-    height:2px;
-    background:#000;
-    top:-9px;
-    right:0;
-    -moz-transition:all 0.3s;
-    -webkit-transition:all 0.3s;
-    transition:all 0.3s;
-}
-.spmenu_btn:after {
-    content:'';
-    position:absolute;
-    width:30px;
-    height:2px;
-    background:#000;
-    bottom:-9px;
-    right:0;
-    -moz-transition:all 0.3s;
-    -webkit-transition:all 0.3s;
-    transition:all 0.3s;
-}
-.spmenu_btn.active {
-    background:#FFF;
-}
-.spmenu_btn.active:before {
-    -moz-transform:rotate(-135deg);
-    -webkit-transform:rotate(-135deg);
-    transform:rotate(-135deg);
-    top:0;
-    right:0;
-}
-.spmenu_btn.active:after {
-    -moz-transform:rotate(135deg);
-    -webkit-transform:rotate(135deg);
-    transform:rotate(135deg);
-    bottom:0;
-    right:0;
+nav label {
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+    display: block;
+    margin: 0;
+    border: 1px solid #fff;
 }
 
-.spmenu {
-    display:none;
-    position:absolute;
-    top:51px;
-    left:0;
-    width:100%;
-    background:#000;
+nav input[type="checkbox"].on-off{
+    display: none;
 }
-nav {
-    display:block;
-    width:100%;
-    margin:0 auto;
+
+nav ul {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-nav li a {
-    display:block;
-    width:100%;
-    color:#FFF;
-    padding:15px;
-    -webkit-box-sizing:border-box;
-    box-sizing:border-box;
-    position:relative;
-    border-bottom:1px solid #999;
+
+nav li {
+    padding: 5px;
+}
+
+nav input[type="checkbox"].on-off + ul{
+    height: 0;
+    overflow: hidden;
+}
+
+nav input[type="checkbox"].on-off:checked + ul{
+    height: 200px;
 }
 
 /** Rounded Mplus Font **/
