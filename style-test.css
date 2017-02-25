@@ -178,19 +178,19 @@ header,footer{
 }
 
 /** MENU **/
-label {
+nav {
   color: #f3f3f3;
   background: #3769c8;
+}
+nav label {
   padding: 10px;
   text-align: right;
   display: block;
 }
-input[type="checkbox"].on-off{
+nav input[type="checkbox"].on-off{
     display: none;
 }
 nav ul {
-  color: #f3f3f3;
-  background: #3769c8;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -200,11 +200,11 @@ nav ul {
 nav li {
   padding: 5px;
 }
-input[type="checkbox"].on-off + ul{
+nav input[type="checkbox"].on-off + ul{
   height: 0;
   overflow: hidden;
 }
-input[type="checkbox"].on-off:checked + ul{
+nav input[type="checkbox"].on-off:checked + ul{
   height: auto;
 }
 
