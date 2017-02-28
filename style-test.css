@@ -198,9 +198,6 @@ nav input[type="checkbox"].on-off{
 nav ul {
   background: #3769c8;
   -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 nav li {
@@ -348,8 +345,8 @@ nav input[type="checkbox"].on-off:checked + ul{
 }
 @font-face {
   font-family: lg;
-  src: url(../fonts/lg.eot?n1z373);
-  src: url(../fonts/lg.eot?#iefixn1z373) format("embedded-opentype"), url(../fonts/lg.woff?n1z373) format("woff"), url(../fonts/lg.ttf?n1z373) format("truetype"), url(../fonts/lg.svg?n1z373#lg) format("svg");
+  src: url(//cdn.jsdelivr.net/lightgallery.js/1.0.1/fonts/lg.eot?n1z373);
+  src: url(//cdn.jsdelivr.net/lightgallery.js/1.0.1/fonts/lg.eot?#iefixn1z373) format("embedded-opentype"), url(//cdn.jsdelivr.net/lightgallery.js/1.0.1/fonts/lg.woff?n1z373) format("woff"), url(//cdn.jsdelivr.net/lightgallery.js/1.0.1/fonts/lg.ttf?n1z373) format("truetype"), url(//cdn.jsdelivr.net/lightgallery.js/1.0.1/fonts/lg.svg?n1z373#lg) format("svg");
   font-weight: 400;
   font-style: normal
 }
@@ -404,22 +401,6 @@ nav input[type="checkbox"].on-off:checked + ul{
     left: -30px
   }
 }
-@-moz-keyframes lg-right-end {
-  0%, 100% {
-    left: 0
-  }
-  50% {
-    left: -30px
-  }
-}
-@-ms-keyframes lg-right-end {
-  0%, 100% {
-    left: 0
-  }
-  50% {
-    left: -30px
-  }
-}
 @keyframes lg-right-end {
   0%, 100% {
     left: 0
@@ -429,22 +410,6 @@ nav input[type="checkbox"].on-off:checked + ul{
   }
 }
 @-webkit-keyframes lg-left-end {
-  0%, 100% {
-    left: 0
-  }
-  50% {
-    left: 30px
-  }
-}
-@-moz-keyframes lg-left-end {
-  0%, 100% {
-    left: 0
-  }
-  50% {
-    left: 30px
-  }
-}
-@-ms-keyframes lg-left-end {
   0%, 100% {
     left: 0
   }
@@ -462,13 +427,11 @@ nav input[type="checkbox"].on-off:checked + ul{
 }
 .lg-outer.lg-right-end .lg-object {
   -webkit-animation: lg-right-end .3s;
-  -o-animation: lg-right-end .3s;
   animation: lg-right-end .3s;
   position: relative
 }
 .lg-outer.lg-left-end .lg-object {
   -webkit-animation: lg-left-end .3s;
-  -o-animation: lg-left-end .3s;
   animation: lg-left-end .3s;
   position: relative
 }
@@ -492,7 +455,6 @@ nav input[type="checkbox"].on-off:checked + ul{
   text-decoration: none!important;
   outline: 0;
   -webkit-transition: color .2s linear;
-  -o-transition: color .2s linear;
   transition: color .2s linear
 }
 .lg-toolbar .lg-icon:hover {
@@ -533,9 +495,10 @@ nav input[type="checkbox"].on-off:checked + ul{
 .lg-next, .lg-prev, .lg-toolbar {
   opacity: 1;
   -webkit-transition: -webkit-transform .35s cubic-bezier(0, 0, .25, 1) 0s, opacity .35s cubic-bezier(0, 0, .25, 1) 0s, color .2s linear;
-  -moz-transition: -moz-transform .35s cubic-bezier(0, 0, .25, 1) 0s, opacity .35s cubic-bezier(0, 0, .25, 1) 0s, color .2s linear;
-  -o-transition: -o-transform .35s cubic-bezier(0, 0, .25, 1) 0s, opacity .35s cubic-bezier(0, 0, .25, 1) 0s, color .2s linear;
-  transition: transform .35s cubic-bezier(0, 0, .25, 1) 0s, opacity .35s cubic-bezier(0, 0, .25, 1) 0s, color .2s linear
+  -webkit-transition: opacity .35s cubic-bezier(0, 0, .25, 1) 0s, color .2s linear, -webkit-transform .35s cubic-bezier(0, 0, .25, 1) 0s;
+  transition: opacity .35s cubic-bezier(0, 0, .25, 1) 0s, color .2s linear, -webkit-transform .35s cubic-bezier(0, 0, .25, 1) 0s;
+  transition: transform .35s cubic-bezier(0, 0, .25, 1) 0s, opacity .35s cubic-bezier(0, 0, .25, 1) 0s, color .2s linear;
+  transition: transform .35s cubic-bezier(0, 0, .25, 1) 0s, opacity .35s cubic-bezier(0, 0, .25, 1) 0s, color .2s linear, -webkit-transform .35s cubic-bezier(0, 0, .25, 1) 0s
 }
 .lg-hide-items .lg-prev {
   opacity: 0;
@@ -557,12 +520,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-object {
   transform: scale3d(.5, .5, .5);
   opacity: 0;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0, 0, .25, 1) 0s, opacity 250ms cubic-bezier(0, 0, .25, 1)!important;
-  -moz-transition: -moz-transform 250ms cubic-bezier(0, 0, .25, 1) 0s, opacity 250ms cubic-bezier(0, 0, .25, 1)!important;
-  -o-transition: -o-transform 250ms cubic-bezier(0, 0, .25, 1) 0s, opacity 250ms cubic-bezier(0, 0, .25, 1)!important;
+  -webkit-transition: opacity 250ms cubic-bezier(0, 0, .25, 1), -webkit-transform 250ms cubic-bezier(0, 0, .25, 1) 0s!important;
+  transition: opacity 250ms cubic-bezier(0, 0, .25, 1), -webkit-transform 250ms cubic-bezier(0, 0, .25, 1) 0s!important;
   transition: transform 250ms cubic-bezier(0, 0, .25, 1) 0s, opacity 250ms cubic-bezier(0, 0, .25, 1)!important;
+  transition: transform 250ms cubic-bezier(0, 0, .25, 1) 0s, opacity 250ms cubic-bezier(0, 0, .25, 1), -webkit-transform 250ms cubic-bezier(0, 0, .25, 1) 0s!important;
   -webkit-transform-origin: 50% 50%;
-  -moz-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
   transform-origin: 50% 50%
 }
 body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object {
@@ -580,13 +542,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   -webkit-transform: translate3d(0, 100%, 0);
   transform: translate3d(0, 100%, 0);
   -webkit-transition: -webkit-transform .25s cubic-bezier(0, 0, .25, 1) 0s;
-  -moz-transition: -moz-transform .25s cubic-bezier(0, 0, .25, 1) 0s;
-  -o-transition: -o-transform .25s cubic-bezier(0, 0, .25, 1) 0s;
-  transition: transform .25s cubic-bezier(0, 0, .25, 1) 0s
+  transition: -webkit-transform .25s cubic-bezier(0, 0, .25, 1) 0s;
+  transition: transform .25s cubic-bezier(0, 0, .25, 1) 0s;
+  transition: transform .25s cubic-bezier(0, 0, .25, 1) 0s, -webkit-transform .25s cubic-bezier(0, 0, .25, 1) 0s
 }
 .lg-outer .lg-thumb-outer.lg-grab .lg-thumb-item {
   cursor: -webkit-grab;
-  cursor: -moz-grab;
   cursor: -o-grab;
   cursor: -ms-grab;
   cursor: grab
@@ -594,7 +555,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .lg-outer .lg-thumb-outer.lg-grabbing .lg-thumb-item {
   cursor: move;
   cursor: -webkit-grabbing;
-  cursor: -moz-grabbing;
   cursor: -o-grabbing;
   cursor: -ms-grabbing;
   cursor: grabbing
@@ -624,7 +584,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 @media (min-width:1025px) {
   .lg-outer .lg-thumb-item {
     -webkit-transition: border-color .25s ease;
-    -o-transition: border-color .25s ease;
     transition: border-color .25s ease
   }
 }
@@ -634,7 +593,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .lg-outer .lg-thumb-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover
+  -o-object-fit: cover;
+     object-fit: cover
 }
 .lg-outer.lg-has-thumb .lg-item {
   padding-bottom: 120px
@@ -644,7 +604,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .lg-outer.lg-pull-caption-up .lg-sub-html {
   -webkit-transition: bottom .25s ease;
-  -o-transition: bottom .25s ease;
   transition: bottom .25s ease
 }
 .lg-outer.lg-pull-caption-up.lg-thumb-open .lg-sub-html {
@@ -752,8 +711,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   z-index: 1083;
   opacity: 0;
   -webkit-transition: opacity 80ms ease 0s;
-  -moz-transition: opacity 80ms ease 0s;
-  -o-transition: opacity 80ms ease 0s;
   transition: opacity 80ms ease 0s
 }
 .lg-progress-bar .lg-progress {
@@ -779,36 +736,31 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .lg-outer.lg-use-transition-for-zoom .lg-item.lg-complete.lg-zoomable .lg-img-wrap {
   -webkit-transition: -webkit-transform .3s cubic-bezier(0, 0, .25, 1) 0s;
-  -moz-transition: -moz-transform .3s cubic-bezier(0, 0, .25, 1) 0s;
-  -o-transition: -o-transform .3s cubic-bezier(0, 0, .25, 1) 0s;
-  transition: transform .3s cubic-bezier(0, 0, .25, 1) 0s
+  transition: -webkit-transform .3s cubic-bezier(0, 0, .25, 1) 0s;
+  transition: transform .3s cubic-bezier(0, 0, .25, 1) 0s;
+  transition: transform .3s cubic-bezier(0, 0, .25, 1) 0s, -webkit-transform .3s cubic-bezier(0, 0, .25, 1) 0s
 }
 .lg-outer.lg-use-left-for-zoom .lg-item.lg-complete.lg-zoomable .lg-img-wrap {
   -webkit-transition: left .3s cubic-bezier(0, 0, .25, 1) 0s, top .3s cubic-bezier(0, 0, .25, 1) 0s;
-  -moz-transition: left .3s cubic-bezier(0, 0, .25, 1) 0s, top .3s cubic-bezier(0, 0, .25, 1) 0s;
-  -o-transition: left .3s cubic-bezier(0, 0, .25, 1) 0s, top .3s cubic-bezier(0, 0, .25, 1) 0s;
   transition: left .3s cubic-bezier(0, 0, .25, 1) 0s, top .3s cubic-bezier(0, 0, .25, 1) 0s
 }
 .lg-outer .lg-item.lg-complete.lg-zoomable .lg-img-wrap {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
   backface-visibility: hidden
 }
 .lg-outer .lg-item.lg-complete.lg-zoomable .lg-image {
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
   -webkit-transition: -webkit-transform .3s cubic-bezier(0, 0, .25, 1) 0s, opacity .15s!important;
-  -moz-transition: -moz-transform .3s cubic-bezier(0, 0, .25, 1) 0s, opacity .15s!important;
-  -o-transition: -o-transform .3s cubic-bezier(0, 0, .25, 1) 0s, opacity .15s!important;
+  -webkit-transition: opacity .15s, -webkit-transform .3s cubic-bezier(0, 0, .25, 1) 0s!important;
+  transition: opacity .15s, -webkit-transform .3s cubic-bezier(0, 0, .25, 1) 0s!important;
   transition: transform .3s cubic-bezier(0, 0, .25, 1) 0s, opacity .15s!important;
+  transition: transform .3s cubic-bezier(0, 0, .25, 1) 0s, opacity .15s, -webkit-transform .3s cubic-bezier(0, 0, .25, 1) 0s!important;
   -webkit-transform-origin: 0 0;
-  -moz-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
   backface-visibility: hidden
 }
 #lg-zoom-in:after {
@@ -873,9 +825,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   width: 120px;
   border-radius: 3px;
   -webkit-transition: opacity .15s ease 0s, -webkit-transform .15s ease 0s;
-  -moz-transition: opacity .15s ease 0s, -moz-transform .15s ease 0s;
-  -o-transition: opacity .15s ease 0s, -o-transform .15s ease 0s;
+  transition: opacity .15s ease 0s, -webkit-transform .15s ease 0s;
   transition: opacity .15s ease 0s, transform .15s ease 0s;
+  transition: opacity .15s ease 0s, transform .15s ease 0s, -webkit-transform .15s ease 0s;
   -webkit-transform: translate3d(0, 5px, 0);
   transform: translate3d(0, 5px, 0)
 }
@@ -890,7 +842,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   display: block;
   height: 12px;
   -webkit-transition: box-shadow .3s ease 0s;
-  -o-transition: box-shadow .3s ease 0s;
   transition: box-shadow .3s ease 0s;
   width: 12px
 }
@@ -928,15 +879,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   opacity: 0;
   visibility: hidden;
   -webkit-transition: visibility 0s linear .18s, opacity .18s linear 0s;
-  -o-transition: visibility 0s linear .18s, opacity .18s linear 0s;
   transition: visibility 0s linear .18s, opacity .18s linear 0s
 }
 .lg-outer.lg-dropdown-active #lg-dropdown-overlay, .lg-outer.lg-dropdown-active .lg-dropdown {
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
-  -moz-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   opacity: 1;
@@ -955,15 +902,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   top: 50px;
   opacity: 0;
   visibility: hidden;
-  -moz-transform: translate3d(0, 5px, 0);
-  -o-transform: translate3d(0, 5px, 0);
-  -ms-transform: translate3d(0, 5px, 0);
   -webkit-transform: translate3d(0, 5px, 0);
   transform: translate3d(0, 5px, 0);
   -webkit-transition: -webkit-transform .18s linear 0s, visibility 0s linear .5s, opacity .18s linear 0s;
-  -moz-transition: -moz-transform .18s linear 0s, visibility 0s linear .5s, opacity .18s linear 0s;
-  -o-transition: -o-transform .18s linear 0s, visibility 0s linear .5s, opacity .18s linear 0s;
-  transition: transform .18s linear 0s, visibility 0s linear .5s, opacity .18s linear 0s
+  -webkit-transition: visibility 0s linear .5s, opacity .18s linear 0s, -webkit-transform .18s linear 0s;
+  transition: visibility 0s linear .5s, opacity .18s linear 0s, -webkit-transform .18s linear 0s;
+  transition: transform .18s linear 0s, visibility 0s linear .5s, opacity .18s linear 0s;
+  transition: transform .18s linear 0s, visibility 0s linear .5s, opacity .18s linear 0s, -webkit-transform .18s linear 0s
 }
 .lg-outer .lg-dropdown:after {
   content: "";
@@ -1060,12 +1005,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   z-index: 1050;
   opacity: 0;
   -webkit-transition: opacity .15s ease 0s;
-  -o-transition: opacity .15s ease 0s;
   transition: opacity .15s ease 0s
 }
 .lg-outer * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box
 }
 .lg-outer.lg-visible {
@@ -1084,7 +1026,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .lg-outer.lg-grab img.lg-object {
   cursor: -webkit-grab;
-  cursor: -moz-grab;
   cursor: -o-grab;
   cursor: -ms-grab;
   cursor: grab
@@ -1092,7 +1033,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .lg-outer.lg-grabbing img.lg-object {
   cursor: move;
   cursor: -webkit-grabbing;
-  cursor: -moz-grabbing;
   cursor: -o-grabbing;
   cursor: -ms-grabbing;
   cursor: grabbing
@@ -1157,7 +1097,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .lg-outer.lg-show-after-load .lg-item .lg-object, .lg-outer.lg-show-after-load .lg-item .lg-video-play {
   opacity: 0;
   -webkit-transition: opacity .15s ease 0s;
-  -o-transition: opacity .15s ease 0s;
   transition: opacity .15s ease 0s
 }
 .lg-outer.lg-show-after-load .lg-item.lg-complete .lg-object, .lg-outer.lg-show-after-load .lg-item.lg-complete .lg-video-play {
@@ -1176,7 +1115,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   background-color: #000;
   opacity: 0;
   -webkit-transition: opacity .15s ease 0s;
-  -o-transition: opacity .15s ease 0s;
   transition: opacity .15s ease 0s
 }
 .lg-backdrop.in {
@@ -1184,13 +1122,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .lg-css3.lg-no-trans .lg-current, .lg-css3.lg-no-trans .lg-next-slide, .lg-css3.lg-no-trans .lg-prev-slide {
   -webkit-transition: none 0s ease 0s!important;
-  -moz-transition: none 0s ease 0s!important;
-  -o-transition: none 0s ease 0s!important;
   transition: none 0s ease 0s!important
 }
 .lg-css3.lg-use-css3 .lg-item, .lg-css3.lg-use-left .lg-item {
   -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
   backface-visibility: hidden
 }
 .lg-css3.lg-fade .lg-item {
@@ -1201,8 +1136,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .lg-css3.lg-fade .lg-item.lg-current, .lg-css3.lg-fade .lg-item.lg-next-slide, .lg-css3.lg-fade .lg-item.lg-prev-slide {
   -webkit-transition: opacity .1s ease 0s;
-  -moz-transition: opacity .1s ease 0s;
-  -o-transition: opacity .1s ease 0s;
   transition: opacity .1s ease 0s
 }
 .lg-css3.lg-slide.lg-use-css3 .lg-item {
@@ -1223,9 +1156,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current, .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-next-slide, .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-prev-slide {
   -webkit-transition: -webkit-transform 1s cubic-bezier(0, 0, .25, 1) 0s, opacity .1s ease 0s;
-  -moz-transition: -moz-transform 1s cubic-bezier(0, 0, .25, 1) 0s, opacity .1s ease 0s;
-  -o-transition: -o-transform 1s cubic-bezier(0, 0, .25, 1) 0s, opacity .1s ease 0s;
-  transition: transform 1s cubic-bezier(0, 0, .25, 1) 0s, opacity .1s ease 0s
+  -webkit-transition: opacity .1s ease 0s, -webkit-transform 1s cubic-bezier(0, 0, .25, 1) 0s;
+  transition: opacity .1s ease 0s, -webkit-transform 1s cubic-bezier(0, 0, .25, 1) 0s;
+  transition: transform 1s cubic-bezier(0, 0, .25, 1) 0s, opacity .1s ease 0s;
+  transition: transform 1s cubic-bezier(0, 0, .25, 1) 0s, opacity .1s ease 0s, -webkit-transform 1s cubic-bezier(0, 0, .25, 1) 0s
 }
 .lg-css3.lg-slide.lg-use-left .lg-item {
   opacity: 0;
@@ -1244,7 +1178,5 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .lg-css3.lg-slide.lg-use-left .lg-item.lg-current, .lg-css3.lg-slide.lg-use-left .lg-item.lg-next-slide, .lg-css3.lg-slide.lg-use-left .lg-item.lg-prev-slide {
   -webkit-transition: left 1s cubic-bezier(0, 0, .25, 1) 0s, opacity .1s ease 0s;
-  -moz-transition: left 1s cubic-bezier(0, 0, .25, 1) 0s, opacity .1s ease 0s;
-  -o-transition: left 1s cubic-bezier(0, 0, .25, 1) 0s, opacity .1s ease 0s;
   transition: left 1s cubic-bezier(0, 0, .25, 1) 0s, opacity .1s ease 0s
 }
