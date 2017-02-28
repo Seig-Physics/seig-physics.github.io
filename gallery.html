@@ -51,7 +51,7 @@
     <script src="//cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script>
     <script>
     document.addEventListener("DOMContentLoaded", function() {
-      for (i = 1; i <= 100; i++) { document.getElementById("lightgallery").insertAdjacentHTML('beforeend', '<a href="//placehold.jp/3e80e4/ffffff/500x300.png?text=' + i + '.jpg" class="gallery-img" download>' + '<img src="https://placehold.jp/3e80e4/ffffff/50x30.png?text=' + i + '.jpg" data-src="https://placehold.jp/3e80e4/ffffff/500x300.png?text=' + i + '.jpg" class="lazyload"src=" >' + '</a>'); }
+      for (i = 1; i <= 100; i++) { document.getElementById("lightgallery").insertAdjacentHTML('beforeend', '<a href="//placehold.jp/3e80e4/ffffff/500x300.png?text=' + i + '.jpg" class="gallery-img" download>' + '<img data-src="https://placehold.jp/3e80e4/ffffff/500x300.png?text=' + i + '.jpg" class="lazyload"src=" >' + '</a>'); }
       lightGallery(document.getElementById('lightgallery'));
     }, false);
     </script>
