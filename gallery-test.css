@@ -299,7 +299,7 @@ nav li {
 
 /* === Gallery === */
 
-.lightgallery  main {
+main.lightgallery  {
   margin: 0;
   padding: 5px;
   overflow:auto;
