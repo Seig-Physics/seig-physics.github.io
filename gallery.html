@@ -54,10 +54,40 @@
     <script src="js/lightgallery.min.js"></script>
     <script>
     document.addEventListener("DOMContentLoaded", function() {
-      for (i = 1; i <= 70; i++) { document.getElementById("lightgallery").insertAdjacentHTML('beforeend', '<a href="//github.com/Seig-Physics/2016-summer-camp/raw/master/' + i + '.jpg" download>' + '<img data-src="https://github.com/Seig-Physics/2016-summer-camp-tmb/raw/master/' + i + '.jpg" class="gallery-img lazyload">' + '</a>'); }
-      for (i = 1; i <= 23; i++) { document.getElementById("lightgallery").insertAdjacentHTML('beforeend', '<a href="//github.com/Seig-Physics/2016-space-contest/raw/master/' + i + '.jpg" download>' + '<img data-src="https://github.com/Seig-Physics/2016-space-contest-tmb/raw/master/' + i + '.jpg" class="gallery-img lazyload">' + '</a>'); }
+      for (i = 1; i <= 70; i++) { document.getElementById("lightgallery").insertAdjacentHTML('beforeend', '<a href="//github.com/Seig-Physics/2016-summer-camp/raw/master/' + i + '.jpg" onclick="javascript: downloadFile(' + i + '.jpg, ' + i + '.jpg); return false; download>' + '<img data-src="https://github.com/Seig-Physics/2016-summer-camp-tmb/raw/master/' + i + '.jpg" class="gallery-img lazyload">' + '</a>'); }
+      for (i = 1; i <= 23; i++) { document.getElementById("lightgallery").insertAdjacentHTML('beforeend', '<a href="//github.com/Seig-Physics/2016-space-contest/raw/master/' + i + '.jpg" onclick="javascript: downloadFile(' + i + '.jpg, ' + i + '.jpg); return false; download>' + '<img data-src="https://github.com/Seig-Physics/2016-space-contest-tmb/raw/master/' + i + '.jpg" class="gallery-img lazyload">' + '</a>'); }
       lightGallery(document.getElementById('lightgallery'));
     }, false);
+    function downloadFile(url, filename) {
+      "use strict";
+
+      // XMLHttpRequestオブジェクトを作成する
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", url, true);
+      xhr.responseType = "blob"; // Blobオブジェクトとしてダウンロードする
+      xhr.onload = function (oEvent) {
+        // ダウンロード完了後の処理を定義する
+        var blob = xhr.response;
+        if (window.navigator.msSaveBlob) {
+          // IEとEdge
+          window.navigator.msSaveBlob(blob, filename);
+        }
+        else {
+          // それ以外のブラウザ
+          // Blobオブジェクトを指すURLオブジェクトを作る
+          var objectURL = window.URL.createObjectURL(blob);
+          // リンク（<a>要素）を生成し、JavaScriptからクリックする
+          var link = document.createElement("a");
+          document.body.appendChild(link);
+          link.href = objectURL;
+          link.download = filename;
+          link.click();
+          document.body.removeChild(link);
+        }
+      };
+      // XMLHttpRequestオブジェクトの通信を開始する
+      xhr.send();
+    }
     </script>
   </footer>
 </body>
