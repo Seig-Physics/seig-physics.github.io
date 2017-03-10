@@ -21,6 +21,16 @@
 		"oAP": "\/camp.html",
 		"oF": 0
 		},
+	"\/gallery-test-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/gallery-test-min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/gallery-test.css": {
 		"aP": 1,
 		"bl": 0,
