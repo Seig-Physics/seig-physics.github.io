@@ -54,8 +54,7 @@
     <script src="js/lightgallery.min.js"></script>
     <script>
     document.addEventListener("DOMContentLoaded", function() {
-      for (i = 1; i <= 70; i++) { document.getElementById("lightgallery").insertAdjacentHTML('beforeend', '<a href="//github.com/Seig-Physics/2016-summer-camp/raw/master/' + i + '.jpg">' + '<img data-src="https://raw.githubusercontent.com/Seig-Physics/2016-summer-camp-tmb/master/' + i + '.jpg" class="gallery-img lazyload">' + '</a>'); }
-      for (i = 1; i <= 23; i++) { document.getElementById("lightgallery").insertAdjacentHTML('beforeend', '<a href="//github.com/Seig-Physics/2016-space-contest/raw/master/' + i + '.jpg">' + '<img data-src="https://raw.githubusercontent.com/Seig-Physics/2016-space-contest-tmb/master/' + i + '.jpg" class="gallery-img lazyload">' + '</a>'); }
+      for (i = 1; i <= 70; i++) { document.getElementById("lightgallery").insertAdjacentHTML('beforeend', '<a href="//raw.githubusercontent.com/Seig-Physics/2016-summer-camp-tmb/master/' + i + '.jpg">' + '<img data-src="https://raw.githubusercontent.com/Seig-Physics/2016-summer-camp-tmb/master/' + i + '.jpg" class="gallery-img lazyload">' + '</a>'); }
       lightGallery(document.getElementById('lightgallery'));
     }, false);
     </script>
