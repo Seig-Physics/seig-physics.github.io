@@ -307,7 +307,8 @@ nav li {
   cursor: pointer;
   /** vertically center **/
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
 }
 .flickity-prev-next-button:hover {
   background: white;
