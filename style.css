@@ -183,20 +183,126 @@ footer, header {
   height: 70px;
   color: #f3f3f3;
 }
-nav {
-  padding: 10px 0;
-  background: #3769c8;
-  display: block;
-}
+
+/** responsive-menu **/
+
 nav a {
   color: #fff;
 }
-nav ul {
-  text-align: center;
+#nav {
+  display: none;
 }
-nav li {
-  padding: 0 10px;
-  display: inline;
+nav,.nav-icon,.nav-border,.nav-border:before,.nav-border:after,.nav-contents,.nav-contents li {
+  transition: .3s;
+}
+@media screen and (min-width:737px) {
+  nav {
+    padding: 10px 0;
+    background: #3769c8;
+    display: block;
+  }
+  nav ul {
+    text-align: center;
+  }
+  nav li {
+    padding: 0 10px;
+    display: inline;
+  }
+  .nav-contents {
+    display: none;
+  }
+}
+@media screen and (max-width:736px) {
+  nav {
+    background: #3e80e4;
+  }
+  .nav-text {
+    display: inline-block;
+    width: calc(100% - 70px);
+    float: left;
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding-left: 10px;
+  }
+  .nav-text ul {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    height: 60px;
+  }
+  .nav-text li {
+    padding: 0 10px;
+    display: inline;
+  }
+  .nav-icon {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #3769c8;
+    float: right;
+    margin: 10px;
+  }
+  .nav-contents {
+    width: 100%;
+    background: #73aaff;
+    overflow: hidden;
+    height: 0;
+  }
+  .nav-contents li {
+    padding-right: 10px;
+  }
+  .nav-border,.nav-border:before,.nav-border:after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 14px;
+    height: 2px;
+    background: #fff;
+    border-radius: 1px;
+  }
+  .nav-border {
+    left: 50%;
+    margin: -1px 0 0 -7px;
+  }
+  .nav-border:before,.nav-border:after{
+    content: "";
+    left: 0;
+  }
+  .nav-border:before{
+    margin-top: -6px;
+  }
+  .nav-border:after{
+    margin-top: 4px;
+  }
+  #nav:checked + label .nav-icon {
+    background: #73aaff;
+  }
+  #nav:checked + label + .nav-contents {
+    height: auto;
+    padding: 5px 0;
+  }
+  #nav:checked + label + .nav-contents li {
+    padding: 3px 10px 3px 0;
+    text-align: right
+  }
+  #nav:checked + label .nav-border:before,#nav:checked + label .nav-border:after {
+    margin-top: 0;
+  }
+  #nav:checked + label .nav-border:before {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  #nav:checked + label .nav-border {
+    background: transparent;
+  }
+  #nav:checked + label .nav-border:after {
+    -webkit-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+  }
 }
 
 /** Rounded Mplus Font **/

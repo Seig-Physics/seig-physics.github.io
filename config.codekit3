@@ -15,35 +15,35 @@
 		"oAP": "\/_config.yml",
 		"oF": 0
 		},
+	"\/about.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/about.html",
+		"oF": 0
+		},
 	"\/camp.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/camp.html",
 		"oF": 0
 		},
-	"\/gallery-test.css": {
+	"\/gallery-style.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/gallery-test-min.css",
+		"oAP": "\/gallery-style-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/gallery-test.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/gallery-test.html",
-		"oF": 0
-		},
-	"\/gallery-test.min.css": {
+	"\/gallery-style.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/gallery-test.min-min.css",
+		"oAP": "\/gallery-style.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
@@ -85,6 +85,12 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/lego-sp.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lego-sp.html",
+		"oF": 0
 		},
 	"\/README.md": {
 		"cS": 0,

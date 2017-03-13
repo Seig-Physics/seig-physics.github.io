@@ -23,30 +23,60 @@
     聖学院物理部
   </header>
   <nav>
-    <ul>
-      <li>
-        <a href="index.html">HOME</a>
-      </li>
-      <li>
-        <a href="schedule.html">一年の予定</a>
-      </li>
-      <li>
-        <a href="camp.html">合宿について</a>
-      </li>
-      <li>
-        <a href="gallery.html">ギャラリー</a>
-      </li>
-    </ul>
+    <div class="nav-text">
+      <ul>
+        <li>
+          <a href="index.html">HOME</a>
+        </li>
+        <li>
+          <a href="schedule.html">一年の予定</a>
+        </li>
+        <li>
+          <a href="camp.html">合宿について</a>
+        </li>
+        <li>
+          <a href="gallery.html">ギャラリー</a>
+        </li>
+        <li>
+          <a href="lego-sp.html">レゴシリアスプレイについて</a>
+        </li>
+        <li>
+          <a href="about.html">このサイトについて</a>
+        </li>
+      </ul>
+    </div>
+    <input type="checkbox" id="nav"/>
+    <label for="nav">
+      <div class="nav-icon">
+        <span class="nav-border"></span>
+      </div>
+    </label>
+    <div class="nav-contents">
+      <ul>
+        <li>
+          <a href="index.html">HOME</a>
+        </li>
+        <li>
+          <a href="schedule.html">一年の予定</a>
+        </li>
+        <li>
+          <a href="camp.html">合宿について</a>
+        </li>
+        <li>
+          <a href="gallery.html">ギャラリー</a>
+        </li>
+        <li>
+          <a href="lego-sp.html">レゴシリアスプレイについて</a>
+        </li>
+        <li>
+          <a href="about.html">このサイトについて</a>
+        </li>
+      </ul>
+    </div>
   </nav>
   <main>
-    <div id="contents-main">
       <h1>ギャラリー</h1>
       <div id="lightgallery"></div>
-    </div>
-    <div id="margin-space"></div>
-    <div id="contents-side">
-      作成中です。<br>
-    </div>
   </main>
   <footer>
     Copyright &copy; 2017 聖学院物理部 All Rights Reserved.
@@ -54,8 +84,10 @@
     <script src="js/lightgallery.min.js"></script>
     <script>
     document.addEventListener("DOMContentLoaded", function() {
-      for (i = 1; i <= 69; i++) { document.getElementById("lightgallery").insertAdjacentHTML('beforeend', '<a href="//seig-physics.github.io/2016-summer-camp/' + i + '.jpg">' + '<img data-src="https://seig-physics.github.io/2016-summer-camp-tmb/' + i + '.jpg" class="gallery-img lazyload">' + '</a>'); }
+      for (i = 1; i <= 7; i++) { document.getElementById("lightgallery").insertAdjacentHTML('beforeend', '<a href="//seig-physics.github.io/2016-science-contest/' + i + '.jpg">' + '<img data-src="https://seig-physics.github.io/2016-science-contest-tmb/' + i + '.jpg" class="gallery-img lazyload">' + '</a>'); }
+      for (i = 1; i <= 54; i++) { document.getElementById("lightgallery").insertAdjacentHTML('beforeend', '<a href="//seig-physics.github.io/2016-lego-sp/' + i + '.jpg">' + '<img data-src="https://seig-physics.github.io/2016-lego-sp-tmb/' + i + '.jpg" class="gallery-img lazyload">' + '</a>'); }
       for (i = 1; i <= 23; i++) { document.getElementById("lightgallery").insertAdjacentHTML('beforeend', '<a href="//seig-physics.github.io/2016-space-contest/' + i + '.jpg">' + '<img data-src="https://seig-physics.github.io/2016-space-contest-tmb/' + i + '.jpg" class="gallery-img lazyload">' + '</a>'); }
+      for (i = 1; i <= 69; i++) { document.getElementById("lightgallery").insertAdjacentHTML('beforeend', '<a href="//seig-physics.github.io/2016-summer-camp/' + i + '.jpg">' + '<img data-src="https://seig-physics.github.io/2016-summer-camp-tmb/' + i + '.jpg" class="gallery-img lazyload">' + '</a>'); }
       lightGallery(document.getElementById('lightgallery'));
     }, false);
     </script>
