@@ -27,34 +27,6 @@
 		"oAP": "\/camp.html",
 		"oF": 0
 		},
-	"\/fonts\/lg.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/lg.eot",
-		"oF": 0
-		},
-	"\/fonts\/lg.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/lg.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/lg.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/lg.ttf",
-		"oF": 0
-		},
-	"\/fonts\/lg.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/lg.woff",
-		"oF": 0
-		},
 	"\/gallery-style.css": {
 		"aP": 1,
 		"bl": 0,
