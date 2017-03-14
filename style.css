@@ -689,6 +689,7 @@ nav,.nav-icon,.nav-border,.nav-border:before,.nav-border:after,.nav-contents,.na
   color: #FFF
 }
 .lg-toolbar .lg-close:after {
+  font-size: 16px;
   content: "\e070"
 }
 .lg-toolbar .lg-download:after {
@@ -852,7 +853,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   cursor: pointer;
   font-size: 20px;
   height: 39px;
-  line-height: 27px;
+  line-height: 30px;
   padding: 5px 0;
   position: absolute;
   right: 20px;
