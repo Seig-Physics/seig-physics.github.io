@@ -674,7 +674,7 @@ nav,.nav-icon,.nav-border,.nav-border:before,.nav-border:after,.nav-contents,.na
   color: #999;
   cursor: pointer;
   float: right;
-  font-size: 24px;
+  font-size: 20px;
   height: 47px;
   line-height: 27px;
   padding: 10px 0;
@@ -850,7 +850,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   border-radius: 2px 2px 0 0;
   color: #999;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 20px;
   height: 39px;
   line-height: 27px;
   padding: 5px 0;
@@ -1008,10 +1008,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   content: "\e311"
 }
 #lg-actual-size {
-  font-size: 20px
-}
-#lg-actual-size:after {
-  content: "\e033"
+  display: none;
 }
 #lg-zoom-out {
   opacity: .5;
