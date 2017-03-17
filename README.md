@@ -4,6 +4,14 @@
 # メモ
 <script async defer src='//use.fontawesome.com/07715a7982.js'></script>
 
+<div id="slider">
+  <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true , "autoPlay": "1500", "pauseAutoPlayOnHover": false}'>
+    <div class="carousel-cell"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree" /></div>
+    <div class="carousel-cell"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree" /></div>
+    <div class="carousel-cell"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree" /></div>
+  </div>
+</div>
+
 ## GitHubページへようこそ　　　翻訳：Google
 [GitHubのエディタ](https://github.com/SeigPhysics/site/edit/master/README.md)を使用して、MarkdownファイルでWebサイトのコンテンツを管理し、プレビューすることができます。
 
