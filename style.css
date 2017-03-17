@@ -228,7 +228,7 @@ footer, header {
 nav a {
   color: #fff;
 }
-nav li {
+.nav-header li,.nav-footer li {
   display: inline;
 }
 .nav-text,.nav-footer {
