@@ -82,6 +82,15 @@
         <h1>404</h1>
         <p>こちらのページは存在しません。<br>
         ページなどの変更に伴いURLが変更されてしまった可能性があります。</p>
+        <form name="form_count"><input name="counter" type="text" size="1"></form>
+        <script>
+          count = 60;
+          timerID = setInterval('countup()',1000); //1秒毎にcountup()を呼び出し
+          function countup() {
+            if(count > 0){
+              count--; //減算
+              document.form_count.counter.value = count; //代入
+        </script>
         <p>60 秒後にトップページにリダイレクトします。</p>
         <h2>各ページについて</h2>
         <h3><a href="//seig-physics.github.io/schedule.html">一年の予定</a></h3>
