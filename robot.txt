@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /404.html
+Disallow: /fonts/
+Disallow: /js/
+Disallow: /*.css
+Disallow: /_config.yml
+Disallow: /README.md
+
+User-agent: Megalodon
+Disallow: /gallery.html
+
+Sitemap: Sitemap: https://seig-physics.github.io/sitemap.xml
