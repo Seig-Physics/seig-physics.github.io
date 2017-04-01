@@ -75,8 +75,16 @@
     </div>
   </nav>
   <main>
-      <h1>ギャラリー</h1>
-      <div id="lightgallery"></div>
+    <div id="contents">
+      <div id="content-main">
+        <h1>ギャラリー</h1>
+        <div id="lightgallery"></div>
+      </div>
+      <div id="content-side">
+        <h4>公式アカウント</h4>
+        作成中です。<br>
+      </div>
+    </div>
   </main>
   <footer>
     Copyright &copy; 2017 聖学院物理部 All Rights Reserved.
@@ -84,7 +92,8 @@
     <script src="js/lightgallery.min.js"></script>
     <script>
     document.addEventListener("DOMContentLoaded", function() {
-      for (i = 1; i <= 7; i++) { document.getElementById("lightgallery").insertAdjacentHTML('beforeend', '<a href="//seig-physics.github.io/download.php?file=2016-science-contest/' + i + '.jpg">' + '<img data-src="https://seig-physics.github.io/2016-science-contest-tmb/' + i + '.jpg" class="gallery-img lazyload">' + '</a>'); }
+      for (i = 1; i <= 31; i++) { document.getElementById("lightgallery").insertAdjacentHTML('beforeend', '<a href="//seig-physics.github.io/2016-get-together/' + i + '.jpg">' + '<img data-src="https://seig-physics.github.io/2016-get-together-tmb/' + i + '.jpg" class="gallery-img lazyload">' + '</a>'); }
+      for (i = 1; i <= 7; i++) { document.getElementById("lightgallery").insertAdjacentHTML('beforeend', '<a href="//seig-physics.github.io/2016-science-contest/' + i + '.jpg">' + '<img data-src="https://seig-physics.github.io/2016-science-contest-tmb/' + i + '.jpg" class="gallery-img lazyload">' + '</a>'); }
       for (i = 1; i <= 54; i++) { document.getElementById("lightgallery").insertAdjacentHTML('beforeend', '<a href="//seig-physics.github.io/2016-lego-sp/' + i + '.jpg">' + '<img data-src="https://seig-physics.github.io/2016-lego-sp-tmb/' + i + '.jpg" class="gallery-img lazyload">' + '</a>'); }
       for (i = 1; i <= 23; i++) { document.getElementById("lightgallery").insertAdjacentHTML('beforeend', '<a href="//seig-physics.github.io/2016-space-contest/' + i + '.jpg">' + '<img data-src="https://seig-physics.github.io/2016-space-contest-tmb/' + i + '.jpg" class="gallery-img lazyload">' + '</a>'); }
       for (i = 1; i <= 56; i++) { document.getElementById("lightgallery").insertAdjacentHTML('beforeend', '<a href="//seig-physics.github.io/2016-summer-camp/' + i + '.jpg">' + '<img data-src="https://seig-physics.github.io/2016-summer-camp-tmb/' + i + '.jpg" class="gallery-img lazyload">' + '</a>'); }
