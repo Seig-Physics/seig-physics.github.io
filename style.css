@@ -408,7 +408,7 @@ nav,.nav-icon,.nav-border,.nav-border:before,.nav-border:after,.nav-contents,.na
   width: 100%;
 }
 .carousel-cell img {
-  width: 100%;
+  object-fit: cover;
 }
 .flickity-enabled {
   position: relative;
