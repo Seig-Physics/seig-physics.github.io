@@ -403,6 +403,7 @@ nav,.nav-icon,.nav-border,.nav-border:before,.nav-border:after,.nav-contents,.na
 }
 
 /* Flickity v2.0.5 http://flickity.metafizzy.co */
+
 .carousel-cell {
   height:  400px;
   width: 100%;
@@ -533,6 +534,13 @@ nav,.nav-icon,.nav-border,.nav-border:before,.nav-border:after,.nav-contents,.na
 }
 .flickity-page-dots .dot.is-selected {
   opacity: 1;
+}
+
+/** IE **/
+
+.object-fit-img {
+  object-fit: contain;
+  font-family: 'object-fit: contain;'
 }
 
 /* === ProcessLine === */
