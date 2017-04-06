@@ -189,10 +189,6 @@ footer, header {
     display: table;
     border-spacing: 10px;
   }
-  #content-slider {
-    display: table;
-    min-width: 810px;
-  }
   #content-main,#content-side,#slider {
     border: solid 1px #c6c6c6;
     border-radius: 3px;
