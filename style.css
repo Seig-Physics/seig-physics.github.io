@@ -109,7 +109,7 @@ a:hover:after:not([id^="lg"]) {
   transition: .3s;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
+  transform: translateX(-50%);
   -webkit-animation: zoom .3s;
   animation: zoom .3s;
 }
@@ -128,12 +128,15 @@ a:hover:after {
   content: '';
   width: 100%;
 }
+p {
+  padding-bottom: 0.5em;
+}
 
 /** title **/
 
 h1 {
   font-size: 1.3em;
-  margin: 0 0 10px
+  padding-bottom: 0.7em;
 }
 h2 {
   font-size: 1.3em;
