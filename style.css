@@ -213,6 +213,9 @@ footer, header {
   #content-side {
     min-width: 258px;
   }
+  .br {
+    display: none;
+  }
 }
 @media screen and (max-width:849px) {
   body {
