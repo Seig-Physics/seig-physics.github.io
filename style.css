@@ -275,6 +275,9 @@ nav,.nav-icon,.nav-border,.nav-border:before,.nav-border:after,.nav-contents,.na
   .nav-header  {
     background: #3e80e4;
   }
+  .hedder_list {
+    display: none;
+  }
   .nav-text {
     width: calc(100% - 70px);
     float: left;
