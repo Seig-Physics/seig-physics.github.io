@@ -183,6 +183,10 @@ footer, header {
   background: #3e80e4;
   color: #f3f3f3;
 }
+
+hedder {
+  padding: 0px;
+}
 @media screen and (min-width:850px) {
   main {
     max-width: 980px;
