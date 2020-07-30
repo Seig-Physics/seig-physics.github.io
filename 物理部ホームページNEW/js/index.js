@@ -1,3 +1,10 @@
+//loading完了時文字ポップアップ
+var header_title = document.getElementById("header_title");
+var loading_animation = document.querySelector(".loading_animation");
+window.onload = function () {
+    header_title.classList.add("header_title_active");
+    loading_animation.classList.add("loaded");
+}
 //モバイル用メニュー表示用スクリプト
 var open_box_button = document.getElementById("open_box_button");
 var mobile_header_content = document.querySelector(".mobile_header_content");
@@ -14,15 +21,6 @@ fa_times.onclick = function () {
     fa_times.style.display = "none";
 }
 //ここまで
-
-
-//loading完了時文字ポップアップ
-var header_title = document.getElementById("header_title");
-var loading_animation = document.querySelector(".loading_animation");
-window.onload = function () {
-    header_title.classList.add("header_title_active");
-    loading_animation.classList.add("loaded");
-}
 
 var gallery_img = document.querySelectorAll(".gallery_img");
 var count_g = 0;
