@@ -1,0 +1,17 @@
+.left_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.left_content {
+    position: relative;
+}
+.gallery_img_wrap {
+    margin: .5rem;
+}
+.gallery_img_wrap img {
+    width: 8rem;
+    height: 6rem;
+}
+.image_active {
+}
