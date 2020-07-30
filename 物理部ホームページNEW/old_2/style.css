@@ -1,0 +1,354 @@
+/*INPORT AREA*/
+@import url('https://fonts.googleapis.com/css?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: 'Lilita One', cursive;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/*==========HTML基本==========*/
+body {
+    width: 100vw;
+    /*background-image: url(./img/main_background.jpg);*/
+    background-color: rgba(233, 233, 233, 0.699);
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
+h3 {
+    font-size: 2.3rem;
+}
+h4 {
+    font-size: 2.5rem;
+    border-left: 0.5rem rgb(75, 75, 75) solid;
+    margin: 0.8rem 0;
+    padding: 0 0.2rem;
+}
+p {
+    font-size: 1.2rem;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+/*=====Loading Animation copy=====*/
+#loading_animation {
+    position: fixed;
+    z-index: 9990;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    top: 0;
+    left: 0;
+}
+.spinner {
+    margin: 200px auto 100px auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+  }
+  
+  .spinner > div {
+    background-color: #333;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  }
+  
+  .spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+  }
+  
+  .spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  .spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+  }
+  
+  .spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+  }
+  .fade {
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+  }
+  
+  @-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+    20% { -webkit-transform: scaleY(1.0) }
+  }
+  
+  @keyframes sk-stretchdelay {
+    0%, 40%, 100% { 
+      transform: scaleY(0.4);
+      -webkit-transform: scaleY(0.4);
+    }  20% { 
+      transform: scaleY(1.0);
+      -webkit-transform: scaleY(1.0);
+    }
+  }
+
+.loaded {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+/*=====ここまで=====*/
+
+/*==========オリジナル　OR　コピー==========*/
+.btn-edge {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 30px;
+    font-size: 19px;
+    height: 40px;
+    line-height: 40px!;
+    background: #51587b;
+    font-size: 20px;
+    color: #fff!important;
+    transition: .4s;
+  }
+  .btn-edge:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: none;
+    border-left: solid 21px white;
+    border-bottom: solid 41px transparent;
+    z-index: 1;
+    transition: .4s;
+  }
+  .btn-edge:after {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: none;
+    border-left: solid 21px transparent;
+    border-bottom: solid 41px white;
+    z-index: 1;
+    transition: .4s;
+  }
+  .btn-edge:hover:before, .btn-edge:hover:after {
+    border-left-width: 25px;
+  }
+  .deg_btn:hover {
+    background: #2c3148;
+  }
+/*==========ここまで==========*/
+  
+/*==========ここから==========*/
+.center {
+    text-align: center;
+}
+#header, .header {
+    max-width: 100%;
+    position: relative;
+}
+#header img {
+    width: 100%;
+}
+#title , .title , .title_bk{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    width: 100vw;
+    font-size: 4rem;
+}
+.title_bk {
+    color: black;
+}
+#main_content {
+    position: relative;
+    margin: 0 auto;
+    max-width: 90vw;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 3rem;
+}
+.content-title {
+    text-align: center;
+    border-bottom: 0.2rem gray solid;
+    margin: 0 5rem;
+    font-family: 'Pacifico', cursive;
+}
+#footer {
+    background-color: rgb(39, 39, 39);
+    color: #fff;
+    clear: both;
+}
+#copy_right {
+    font-size: 1.3rem;
+    text-align: center;
+}
+/*==========その他のページ==========*/
+.o_title {
+    text-align: center;
+}
+/*=====CAMP=====*/
+#camp_wrap {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+.camp_img {
+    max-width: 25rem;
+    padding: 0.5rem;
+}
+.camp_text {
+    display: block;
+    max-width: 25rem;
+    padding: 0.5rem;
+}
+/*=====Activity=====*/
+.activity_img {
+    display: block;
+    width: 50rem;
+    margin: 3rem auto;
+}
+.activity_text p {
+    border: 3px rgb(118, 177, 84) solid;
+    border-radius: 0 2rem 0 2rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+}
+/*=====Schedule=====*/
+#Schedule {
+    border-left: 4px rgb(156, 208, 250) solid;
+    margin: 0 auto;
+}
+#Schedule tr::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border-radius: 100%;
+    background:#4788ff;
+    position: relative;
+    left: -11.3px;
+    bottom: 4px;
+}
+#Schedule:last-child::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: relative;
+    left: -14px;
+    bottom: -30px;
+    border-style: solid;
+    border-width: 17.3px 10px 0 10px;
+    border-color: #9cd1fa transparent transparent transparent;
+
+}
+#Schedule th {
+    padding: 1rem 2rem 1rem 0.2rem;
+}
+#Schedule td {
+    padding: 1rem 2rem;
+}
+#Schedule_wrap {
+    margin: 0 auto;
+}
+
+/*==========レスポンシブデザイン==========*/
+@media screen and (max-width: 900px) {
+  /*横幅990px以下の端末*/
+  /*==========HTML基本==========*/
+  h1 {
+      font-size: 1.5rem;
+  }
+  h2 {
+      font-size: 1.2rem;
+  }
+  h3 {
+      font-size: 0.9rem;
+  }
+  h4 {
+      font-size: 1.3rem;
+  }
+  /*==========ここから==========*/
+  #title {
+      font-size: 1.8rem;
+  }
+  #main_content {
+      padding: 1rem;
+  }
+.camp_img , .camp_text {
+    width: 20rem;
+}
+  .activity_img {
+      width: 30rem;
+  }
+
+  #Schedule:last-child::after {
+    left: -14px;
+}
+}
+@media screen and (max-width: 660px) {
+  /*660px以下の端末*/
+  /*==========HTML基本==========*/
+
+  /*==========ここから==========*/
+  #title , .title , .title_bk {
+      font-size: 1.5rem;
+  }
+  .content-title {
+      margin: 0 2rem;
+  }
+  #camp_wrap {
+      display: block;
+  }
+  .camp_img , .camp_text {
+    max-width: 20rem;
+  }
+  .activity_img {
+      width: 20rem;
+  }
+}
