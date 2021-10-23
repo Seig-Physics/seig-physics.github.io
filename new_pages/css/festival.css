@@ -1,0 +1,49 @@
+header {
+    background-image: url("../img/festival_header.JPG");
+}
+#header_title span {
+    color: black;
+    font-size:45px;
+}
+@media screen and (max-width: 750px) {
+    header {
+        height: 30vh;
+    }
+
+    header h2 {
+        font-size: 5vw;
+        top: 0;
+        top: 50%;
+    }
+}
+.youtube_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.youtube_video {
+    width: 35%;
+    padding: 0.5rem 1rem;
+}
+.youtube_video iframe , .youtube_video video {
+    width: 100%;
+    display: block;
+    aspect-ratio: 16 / 9;
+    border: 0;
+}
+.youtube_video h3 {
+    background-color: rgb(168, 168, 168);
+    color: #fff;
+    padding: 0.05rem 0.5rem;
+    overflow-wrap:  break-word;
+}
+.youtube_video p {
+    overflow-wrap:  break-word;
+}
+@media screen and (max-width: 700px) {
+    .youtube_video {
+        width: 80%;
+    }
+}
