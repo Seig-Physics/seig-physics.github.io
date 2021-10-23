@@ -1,19 +1,38 @@
+p {
+    margin: 0 1.2rem;
+}
+
 header {
     background-image: url("../img/festival_header.JPG");
 }
 #header_title span {
-    color: black;
-    font-size:45px;
+    color: rgb(192, 192, 192);
+    font-size:40px;
+}
+.header_background {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 60vh;
+    top: 0;
+    left: 0;
 }
 @media screen and (max-width: 750px) {
     header {
         height: 30vh;
     }
+    .header_background {
+        height: 30vh;
+    }
 
     header h2 {
-        font-size: 5vw;
+        font-size: 6.5vw;
         top: 0;
         top: 50%;
+    }
+
+    #header_title span {
+        font-size: 4.5vw;
     }
 }
 .youtube_wrap {
