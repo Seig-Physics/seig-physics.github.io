@@ -67,3 +67,41 @@ header {
         width: 80%;
     }
 }
+
+
+.video_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.video_content {
+    width: 35%;
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+.video_content img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 16 / 9;
+    border: 0;
+}
+.youtube_play_button {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: #ff0000;
+    text-shadow:1px 1px 1px #5a5a5a;
+}
+
+@media screen and (max-width: 700px) {
+    .video_content {
+        width: 80%;
+    }
+    .youtube_play_button {
+        font-size: 3rem;
+    }
+}
