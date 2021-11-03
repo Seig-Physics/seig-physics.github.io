@@ -81,6 +81,8 @@ header {
     padding: 0.5rem 1rem;
     position: relative;
 }
+.pv_content {
+}
 .video_content img {
     width: 100%;
     display: block;
